@@ -1,0 +1,208 @@
+@import "_base";
+@import "_cols";
+$z_white_color:#fff;
+$z_nav_color:#29a6dc;
+$z_foot_color:#151c2b;
+$z_foot_hover:#121825;
+$z_conpadding:0.24rem;
+$z_yellow_color:#ffc63e;
+$z_black_font:#333;
+$z_gray_font:#b6b6b6;
+$z_search_border:#1074b5;
+$z_shadow:0 0 8px #666;
+$z_bg_color:#f2f2f2;
+/*头部 开始*/
+.z_nav_box{
+  width:100%;
+  height:1rem;
+  background:$z_nav_color;
+  position:fixed;
+  left:0;
+  top:0;
+  padding:0 0.24rem;
+  .z_nav_left{
+    @extend %tb;
+    @include cube(0.5rem);
+    border:0.04rem solid $z_search_border;
+    border-radius: 50%;
+    background:$z_white_color;
+    text-align:center;
+    line-height: 0.45rem;
+    color:$z_nav_color;
+  }
+  .z_nav_right{
+    @extend %tb;
+    right:0.24rem;
+    @include cube(0.5rem);
+    border:0.04rem solid $z_search_border;
+    border-radius: 50%;
+    background:$z_white_color;
+    text-align:center;
+    line-height: 0.5rem;
+    color:$z_nav_color;
+  }
+  .z_nav_mid{
+    width:75%;
+    height:0.54rem;
+    @extend %center;
+    background:$z_white_color;
+    border-radius: 0.27rem;
+    overflow: hidden;
+    /*搜索*/
+    .z_search{
+      float:left;
+      width:0.57rem;
+      height:100%;
+      position:relative;
+      background:#eaeaea;
+      img{
+        @extend %center;
+        width:0.27rem;
+      }
+    }
+    input{
+      outline: none;
+      border:0;
+      margin-top:0.15rem;
+      padding-left:0.15rem;
+      color:$z_gray_font;
+    }
+  }
+}
+/*头部 结束*/
+
+/*内容 开始*/
+.z_con_box{
+  width:100%;
+  min-height:10rem;
+  margin-top:1rem;
+  background:$z_bg_color;
+  padding:0.24rem;
+  .z_rel_top{
+    width:100%;
+    height:0.6rem;
+    margin-bottom:0.22rem;
+    .z_rel_star{
+      float:left;
+      width:0.30rem;
+      height:0.3rem;
+      background:$z_yellow_color;
+      margin:0 0.08rem;
+      border-radius:50%;
+      line-height: 0.3rem;
+      text-align: center;
+      color:$z_white_color;
+      span{
+        font-size:0.18rem;
+      }
+    }
+    .z_rel_title{
+      width:80%;
+      height:100%;
+      float:left;
+    }
+    img{
+      margin-left:2px;
+    }
+    h6{
+      color:#666;
+      font-size:12px;
+      font-weight: normal;
+    }
+  }
+}
+.z_hot{
+  width:100%;
+  min-height:1.67rem;
+  .z_hot_book{
+    border-radius: 0.05rem;
+    margin:0.08rem 0;
+    box-shadow: $z_shadow;
+    width:100%;
+    height:1.67rem;
+    padding-top:0.08rem;
+    padding-left:0.08rem;
+    background:$z_white_color;
+  }
+}
+.z_hot_img{
+  float:left;
+  width:2.4rem;
+  height:1.52rem;
+  border-right:1px dashed $z_gray_font;
+  img{
+    width:2.27rem;
+    height:100%;
+  }
+}
+.z_hot_jianjie{
+  width:4.4rem;
+  height:100%;
+  float:left;
+  padding:0 0.15rem;
+  h4{
+    color:$z_black_font;
+    font-weight:normal;
+    font-family:"宋体";
+    padding:5px 0;
+  }
+  h5{
+    color:$z_gray_font;
+    font-weight:normal;
+    font-size:12px;
+    line-height:1.3em;
+  }
+  .z_jianjie_bottom{
+    width:100%;
+    height:0.40rem;
+    .z_chuban,.z_dizhi{
+      float:left;
+      .iconfont{
+        color:$z_nav_color;
+        font-size:12px;
+      }
+      .z_zhi{
+        color:$z_gray_font;
+        font-size:12px;
+      }
+    }
+    .z_dizhi{
+      float:right;
+    }
+  }
+}
+/*内容 结束*/
+
+/*foot 开始*/
+.z_foot_box{
+  width:100%;
+  height:1rem;
+  background:$z_foot_color;
+  position:fixed;
+  bottom:0;
+  left:0;
+  padding:0.1rem 0;
+  .z_foot{
+    height:100%;
+    border-right:1px solid #717171;
+    text-align: center;
+    color:#717171;
+
+    .z_logo_span{
+      padding:0.05rem 0;
+      font-size:0.45rem;
+      line-height: 0.45rem;
+    }
+    .z_wenzi_span{
+      font-size:0.14rem;
+    }
+  }
+  .z_foot.active{
+    background:$z_foot_hover;
+  }
+  .z_foot.active{
+    color:$z_white_color;
+    font-weight: bold;
+  }
+}
+/*foot 结束*/

@@ -1,0 +1,262 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+ul, li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.update li a div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto; }
+
+.h_header a:nth-child(2) div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto; }
+
+.h_select .h_system img, .h_select .h_midline, .h_select .h_myinform img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto; }
+
+html {
+  font-size: 100px; }
+
+@media (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+@media (min-width: 750px) {
+  html {
+    font-size: 100px; } }
+
+body {
+  font-size: 16px; }
+
+.row::after {
+  content: "";
+  clear: both; }
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+  float: left;
+  position: relative; }
+
+.col-1 {
+  width: 8.33333%; }
+
+.col-2 {
+  width: 16.66667%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.33333%; }
+
+.col-5 {
+  width: 41.66667%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.33333%; }
+
+.col-8 {
+  width: 66.66667%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.33333%; }
+
+.col-11 {
+  width: 91.66667%; }
+
+.col-12 {
+  width: 100%; }
+
+/*变量定义*/
+body {
+  background-color: #fafafa; }
+
+/*头部开始*/
+.h_header {
+  width: 100%;
+  height: 1rem;
+  background-color: #29a6dc;
+  padding: 0 0.24rem; }
+  .h_header a:nth-child(1) div {
+    width: 0.51rem;
+    height: 1rem;
+    background-image: url("../img/h_jiantou_left.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    float: left; }
+  .h_header a:nth-child(2) div {
+    width: 1.52rem;
+    height: 1rem;
+    background-image: url("../img/h_myinform.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    float: left; }
+
+/*头部结束*/
+/*选项卡开始*/
+.h_select {
+  width: 5.7rem;
+  height: 0.84rem;
+  border-radius: 0.42rem;
+  background: #2a3441;
+  margin: 0.2rem auto;
+  padding: 0.08rem;
+  position: relative; }
+  .h_select .h_system {
+    width: 2.39rem;
+    height: 0.69rem;
+    border-radius: 0.35rem;
+    position: relative;
+    float: left; }
+    .h_select .h_system img {
+      width: 1.4rem; }
+    .h_select .h_system .show {
+      display: block; }
+    .h_select .h_system .hide {
+      display: none; }
+  .h_select .h_system.active {
+    border: 0.02rem solid #fff;
+    background: #29a6dc; }
+  .h_select .h_midline {
+    width: 0.03rem;
+    height: 0.6rem;
+    float: left; }
+    .h_select .h_midline img {
+      width: 0.03rem; }
+  .h_select .h_myinform {
+    width: 2.39rem;
+    height: 0.69rem;
+    border-radius: 0.35rem;
+    position: relative;
+    float: right; }
+    .h_select .h_myinform img {
+      width: 1.28rem; }
+    .h_select .h_myinform .show {
+      display: block; }
+    .h_select .h_myinform .hide {
+      display: none; }
+  .h_select .h_myinform.active {
+    border: 0.02rem solid #fff;
+    background: #29a6dc; }
+
+/*选项卡结束*/
+/*更新开始*/
+.update {
+  width: 7rem;
+  height: 6.18rem;
+  background: #fff;
+  margin: 20px auto;
+  box-shadow: 0 0 0.23rem #ccc;
+  border-radius: 0.15rem; }
+  .update li {
+    width: 100%;
+    height: 0.91rem;
+    border-bottom: 1px dashed #959595;
+    padding: 0 0.24rem;
+    position: relative; }
+    .update li a {
+      width: 2.04rem;
+      height: 0.91rem; }
+      .update li a div {
+        width: 0.79rem;
+        height: 0.77rem;
+        background: url("../img/h_head.png") no-repeat left center;
+        background-size: cover;
+        overflow: hidden;
+        float: left; }
+      .update li a > ul {
+        width: auto;
+        height: 0.91rem;
+        float: left;
+        margin-left: 0.79rem; }
+        .update li a > ul > li {
+          border: 0; }
+        .update li a > ul > li:nth-child(1) {
+          width: auto;
+          height: 33.333%;
+          font-size: 0.24rem;
+          padding: 0;
+          line-height: 0.3rem;
+          color: #333; }
+        .update li a > ul > li:nth-child(2) {
+          width: auto;
+          height: 33.333%;
+          font-size: 0.18rem;
+          padding: 0;
+          line-height: 0.3rem;
+          color: #666; }
+        .update li a > ul > li:nth-child(3) {
+          width: auto;
+          height: 100%;
+          font-size: 0.18rem;
+          position: absolute;
+          right: 0.24rem;
+          top: 0;
+          border: 0; }
+          .update li a > ul > li:nth-child(3) > p.iconfont {
+            color: #eb6371;
+            line-height: 0.91rem;
+            font-size: 0.16rem;
+            float: left;
+            margin-right: 0.05rem; }
+          .update li a > ul > li:nth-child(3) > span.time {
+            line-height: 0.91rem;
+            float: right;
+            color: #666; }
+        .update li a > ul > li:nth-child(4) {
+          width: 4.8rem;
+          height: 33.333%;
+          font-size: 12px;
+          padding: 0;
+          line-height: 0.3rem;
+          color: #666;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis; }
+    .update li p {
+      display: block;
+      float: right;
+      line-height: 0.91rem;
+      font-size: 0.28rem;
+      color: #7b7b7b; }
+
+/*更新结束*/

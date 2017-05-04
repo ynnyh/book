@@ -1,0 +1,342 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+ul, li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.flag .flag_in .flag_circle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto; }
+
+.h_header div:nth-child(2), .zhezhao .alert .top, .zhezhao .alert .cancel {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto; }
+
+.flag .flag_in, .flag .flag_in .flag_circle .flag_Incircle, .zhezhao .alert {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto; }
+
+html {
+  font-size: 100px; }
+
+@media (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+@media (min-width: 750px) {
+  html {
+    font-size: 100px; } }
+
+body {
+  font-size: 16px; }
+
+.row::after {
+  content: "";
+  clear: both; }
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+  float: left;
+  position: relative; }
+
+.col-1 {
+  width: 8.33333%; }
+
+.col-2 {
+  width: 16.66667%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.33333%; }
+
+.col-5 {
+  width: 41.66667%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.33333%; }
+
+.col-8 {
+  width: 66.66667%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.33333%; }
+
+.col-11 {
+  width: 91.66667%; }
+
+.col-12 {
+  width: 100%; }
+
+/*变量定义*/
+body {
+  background-color: #fafafa; }
+
+/*头部开始*/
+.h_header {
+  width: 100%;
+  height: 1rem;
+  background-color: #29a6dc;
+  padding: 0 0.24rem; }
+  .h_header div:nth-child(1) {
+    width: 0.51rem;
+    height: 1rem;
+    background-image: url("../img/h_jiantou_left.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    float: left; }
+  .h_header div:nth-child(2) {
+    width: 1.48rem;
+    height: 1rem;
+    background-image: url("../img/h_my.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    float: left; }
+
+/*头部结束*/
+/*更新开始*/
+.update {
+  width: 7rem;
+  height: auto;
+  background: #fff;
+  margin: 20px auto;
+  box-shadow: 0 0 0.23rem #ccc;
+  border-radius: 0.15rem;
+  overflow: hidden; }
+  .update li {
+    width: 100%;
+    height: 0.91rem;
+    border-bottom: 1px dashed #959595;
+    padding: 0 0.24rem; }
+    .update li > div {
+      width: 2.31rem;
+      height: 100%;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      overflow: hidden;
+      float: left; }
+    .update li p {
+      display: block;
+      float: right;
+      line-height: 0.91rem;
+      font-size: 0.28rem;
+      color: #7b7b7b; }
+    .update li .iconfont {
+      content: "&#xe658;";
+      float: right;
+      line-height: 0.91rem;
+      color: #6ec3e7;
+      font-size: 0.48rem; }
+  .update li:nth-child(1) div {
+    background-image: url("../img/h_touxiang.png"); }
+  .update li:last-child {
+    border: 0; }
+  .update li:nth-child(2) div {
+    background-image: url("../img/h_zhanghu.png"); }
+  .update li:last-child {
+    border: 0; }
+  .update li:nth-child(3) div {
+    background-image: url("../img/h_name.png"); }
+  .update li:last-child {
+    border: 0; }
+  .update li:nth-child(4) div {
+    background-image: url("../img/h_sex.png"); }
+  .update li:last-child {
+    border: 0; }
+
+.updates {
+  width: 7rem;
+  height: auto;
+  background: #fff;
+  margin: 20px auto;
+  box-shadow: 0 0 0.23rem #ccc;
+  border-radius: 0.15rem;
+  overflow: hidden; }
+  .updates li {
+    width: 100%;
+    height: 0.91rem;
+    border-bottom: 1px dashed #959595;
+    padding: 0 0.24rem; }
+    .updates li > div {
+      width: 2.31rem;
+      height: 100%;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      overflow: hidden;
+      float: left; }
+    .updates li p {
+      display: block;
+      float: right;
+      line-height: 0.91rem;
+      font-size: 0.28rem;
+      color: #7b7b7b; }
+    .updates li .iconfont {
+      content: "&#xe658;";
+      float: right;
+      line-height: 0.91rem;
+      color: #6ec3e7;
+      font-size: 0.48rem; }
+  .updates li:nth-child(1) div {
+    background-image: url("../img/h_phone.png"); }
+  .updates li:last-child {
+    border: 0; }
+  .updates li:nth-child(2) div {
+    background-image: url("../img/h_password.png"); }
+  .updates li:last-child {
+    border: 0; }
+
+.flag {
+  width: 0.89rem;
+  height: 0.42rem;
+  background-color: #d9e1ff;
+  border-radius: 0.21rem;
+  margin-top: 0.25rem;
+  float: right;
+  padding: 3px;
+  position: relative; }
+  .flag .flag_in {
+    width: 0.83rem;
+    height: 0.36rem;
+    background-color: #3a91fd;
+    border-radius: 0.18rem;
+    padding: 3px; }
+    .flag .flag_in .flag_circle {
+      width: 0.32rem;
+      height: 0.32rem;
+      border-radius: 50%;
+      background-color: #d9e1ff;
+      right: 3px; }
+      .flag .flag_in .flag_circle .flag_Incircle {
+        width: 0.26rem;
+        height: 0.26rem;
+        border-radius: 50%;
+        background-color: #fafafa; }
+        .flag .flag_in .flag_circle .flag_Incircle .flag_green {
+          display: block;
+          width: 0.06rem;
+          height: 0.06rem;
+          border-radius: 50%;
+          background-color: #2de7cb;
+          margin: 0.07rem 0.05rem; }
+
+/*更新结束*/
+/*遮罩开始*/
+.zhezhao {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0; }
+  .zhezhao .alert {
+    width: 4.8rem;
+    height: 2.96rem;
+    background-color: #fff;
+    border-radius: 0.15rem; }
+    .zhezhao .alert .top {
+      width: 100%;
+      height: 0.72rem;
+      background-color: #29dcbc;
+      border-top-left-radius: 0.15rem;
+      border-top-right-radius: 0.15rem; }
+      .zhezhao .alert .top div:nth-child(1) {
+        position: absolute;
+        top: 0.72rem;
+        left: 0;
+        width: 0.5rem;
+        height: 0.21rem;
+        background-image: url("../img/h_dian_right.png");
+        background-size: 100% 20%;
+        background-repeat: no-repeat; }
+      .zhezhao .alert .top div:nth-child(2) {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0.5rem;
+        width: 2.1rem;
+        height: 0.47rem;
+        background-image: url("../img/h_sextitle.png");
+        background-size: cover;
+        background-repeat: no-repeat; }
+      .zhezhao .alert .top div:nth-child(3) {
+        position: absolute;
+        top: 0.72rem;
+        right: 0;
+        width: 0.5rem;
+        height: 0.21rem;
+        background-image: url("../img/h_dian_right.png");
+        background-size: 100% 20%;
+        background-repeat: no-repeat; }
+      .zhezhao .alert .top .title {
+        margin: auto; }
+    .zhezhao .alert .updatess {
+      margin-top: 0.8rem;
+      padding: 0 0.5rem; }
+      .zhezhao .alert .updatess li {
+        width: 0.68rem;
+        height: 0.68rem;
+        border-radius: 50%;
+        box-shadow: 0 0 0.23rem #ccc;
+        float: left;
+        margin: 0.58rem;
+        text-align: center; }
+        .zhezhao .alert .updatess li .iconfont {
+          color: #29a6dc;
+          font-size: 0.36rem;
+          line-height: 0.68rem; }
+      .zhezhao .alert .updatess li.active {
+        background: #29dcbc; }
+        .zhezhao .alert .updatess li.active .iconfont {
+          color: #fff; }
+    .zhezhao .alert .cancel {
+      width: 2.55rem;
+      height: 0.66rem;
+      background-color: #29dcbc;
+      bottom: -0.33rem;
+      border-radius: 0.33rem;
+      font-size: 0.24rem;
+      line-height: 0.66rem;
+      text-align: center;
+      color: #fff; }
+
+/*遮罩结束*/

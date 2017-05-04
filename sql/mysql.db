@@ -1,0 +1,107 @@
+--创建数据库
+CREATE DATABASE book;
+--创建分类表
+CREATE TABLE categories
+(
+  cate_id INT(12) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  cate_name VARCHAR (255) NOT NULL
+)DEFAULT CHARSET = utf8;
+--插入数据
+INSERT INTO categories (cate_id, cate_name) VALUES
+(1,'网文男生'),
+(2,'网文女生'),
+(3,'出版读物');
+--大分类下详细分类
+  DROP TABLE IF EXISTS list;
+  CREATE TABLE list
+  (
+    list_id INT(12) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    list_name VARCHAR (255) NOT NULL,
+    list_pic VARCHAR (255) NOT NULL,
+    cate_id INT(12) NOT NULL
+    FOREIGN KEY (cate_id)
+    REFERENCES categories(cate_id)
+  )DEFAULT CHARSET=utf8;
+
+  --插入分类下小分类
+  INSERT INTO list (list_id, list_name, list_pic, cate_id) VALUES
+  (1,'奇异玄幻','sql/img/1.jpg',1),
+  (2,'都市小说','sql/img/2.jpg',1),
+  (3,'武侠仙侠','sql/img/3.jpg',1),
+  (4,'历史军事','sql/img/3.jpg',1),
+  (5,'科技未来','sql/img/3.jpg',1),
+  (6,'网游竞技','sql/img/3.jpg',1),
+  (7,'悬疑惊悚','sql/img/3.jpg',1),
+  (8,'二次元','sql/img/3.jpg',1),
+  (9,'古代言情','sql/img/3.jpg',2),
+  (10,'校园青春','sql/img/3.jpg',2),
+  (11,'总裁豪门','sql/img/3.jpg',2),
+  (12,'唯美同人','sql/img/3.jpg',2),
+  (13,'幻想言情','sql/img/3.jpg',2),
+  (14,'都市言情','sql/img/3.jpg',2),
+  (15,'悬疑灵异','sql/img/3.jpg',2),
+  (16,'游戏情缘','sql/img/3.jpg',2),
+  (17,'文学小说','sql/img/3.jpg',3),
+  (18,'经典名著','sql/img/3.jpg',3),
+  (19,'经管励志','sql/img/3.jpg',3),
+  (20,'生活休闲','sql/img/3.jpg',3),
+  (21,'婚姻家庭','sql/img/3.jpg',3),
+  (22,'科普教育','sql/img/3.jpg',3),
+  (23,'纪实传记','sql/img/3.jpg',3),
+  (24,'亲子育儿','sql/img/3.jpg',3),
+  (25,'工具百科','sql/img/3.jpg',3);
+
+  -- 创建登录账户表
+  DROP TABLE IF EXISTS admin_user;
+  CREATE TABLE admin_user(
+    id INT (12) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    account VARCHAR (255) NOT NULL,
+    password VARCHAR (255) NOT NULL,
+    hash VARCHAR (255) NOT NULL
+  )DEFAULT CHARSET=utf8;
+
+  INSERT INTO admin_user (account, password,hash) VALUES
+  ('admin','e10adc3949ba59abbe56e057f20f883e','88468d8478342c7b664e011062129a10');
+
+
+  --作者表
+DROP TABLE IF EXISTS author;
+CREATE TABLE author
+(
+  author_id INT (12) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  author_name VARCHAR (255) NOT NULL
+)DEFAULT CHARSET = utf8;
+
+-- 插入歌手
+INSERT INTO author (author_id, author_name) VALUES
+(1,'天蚕土豆'),
+(2,'飞天鱼'),
+(3,'风轻扬'),
+(4,'苏小暖'),
+(5,'唐七公子');
+
+
+   --书籍
+  DROP TABLE IF EXISTS book;
+  CREATE TABLE book
+  (
+    book_id INT (12) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    book_name VARCHAR (255) NOT NULL,
+    book_url VARCHAR (255) NOT NULL,
+    book_date INT (12) NOT NULL,
+    author_id INT (12) NOT NULL,
+    list_id INT (12) NOT NULL,
+    FOREIGN KEY (author_id)
+    REFERENCES author(author_id),
+    FOREIGN KEY (list_id)
+    REFERENCES list(list_id)
+  )DEFAULT CHARSET=utf8;
+
+  --插入书籍
+  INSERT INTO book (book_id, book_name, book_url, book_date, author_id, list_id) VALUES
+  (1,'大主宰','sql/img/1.jpg',2017-02-06,1,1),
+  (2,'万古神帝','sql/img/1.jpg',2017-02-06,2,1),
+  (3,'斗破苍穹','sql/img/1.jpg',2017-02-06,1,1),
+  (4,'凌天战尊','sql/img/1.jpg',2017-02-06,3,1),
+  (5,'邪王追妻:废柴逆天小姐','sql/img/1.jpg',2017-02-06,4,9),
+  (6,'十宗罪','sql/img/1.jpg',2017-02-06,5,17);

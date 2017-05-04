@@ -1,0 +1,198 @@
+@import "base";
+@import "cols";
+
+
+/*变量定义*/
+$h_themeColor:#29a6dc;
+$h_bottomColor:#151c2b;
+$h_jiantouColor:#6ec3e7;
+$h_bottomborderColor:#717171;
+$h_bottomNoColor:#6c6c6d;
+$h_bottomCheckColor:#fff;
+$h_word:#7b7b7b;
+$h_bgcolor:#fafafa;
+$h_flagOutColor:#d9e1ff;
+$h_flagInColor:#3a91fd;
+$h_flagIncircleColor:#fafafa;
+$h_flaggreen:#2de7cb;
+$h_conpadding:0.24rem;
+
+body{
+  @include bg($h_bgcolor);
+}
+/*头部开始*/
+.h_header{
+
+  @include rect(100%,1rem);
+  @include bg($h_themeColor);
+  padding:0 $h_conpadding;
+
+  $h_imglist:(
+
+          '1':'h_jiantou_left.png' 'center' 'left' '0.51rem',
+          '2':'h_my.png' 'center' 'left' '1.48rem',
+
+  );
+  @each $key in map_keys($h_imglist){
+    $url:nth(map_get($h_imglist,$key),1);
+    $position:nth(map_get($h_imglist,$key),2);
+    $float:nth(map_get($h_imglist,$key),3);
+    $width:nth(map_get($h_imglist,$key),4);
+     a:nth-child(#{$key}) div{
+      width:#{$width};
+      height:1rem;
+      background-image: url("../img/#{$url}");
+      background-repeat:no-repeat;
+      background-position:center #{$position};
+      background-size:contain;
+      float: #{$float};
+    }
+  }
+  a:nth-child(2) div{
+    @extend %lr;
+  }
+}
+/*头部结束*/
+/*更新开始*/
+.update{
+  @include rect(7rem, auto);
+  background: #fff;
+  margin: 20px auto;
+  box-shadow: 0 0 0.23rem #ccc;
+  border-radius: 0.15rem;
+  overflow: hidden;
+  li {
+    @include rect(100%, 0.91rem);
+    border-bottom: 1px dashed #959595;
+    padding:0 $h_conpadding;
+    a{
+      div{
+        @include rect(2.31rem, 100%);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        float:left;
+      }
+    }
+
+    p{
+      display: block;
+      float:right;
+      line-height:0.91rem;
+      font-size: 0.28rem;
+      color:$h_word;
+    }
+    .iconfont{
+      content:"&#xe658;";
+      float:right;
+      line-height:0.91rem;
+      color: $h_jiantouColor;
+      font-size:0.48rem;
+    }
+  }
+
+  $h_imglist: (
+          '1':'h_touxiang.png',
+          '2':'h_zhanghu.png',
+          '3':'h_name.png',
+          '4':'h_sex.png'
+  );
+  @each $key in map_keys($h_imglist) {
+    $url: nth(map_get($h_imglist, $key), 1);
+    li:nth-child(#{$key}) a div {
+      background-image: url("../img/#{$url}");
+    }
+
+    li:last-child {
+      border: 0;
+    }
+  }
+}
+.updates{
+  @include rect(7rem, auto);
+  background: #fff;
+  margin: 20px auto;
+  box-shadow: 0 0 0.23rem #ccc;
+  border-radius: 0.15rem;
+  overflow: hidden;
+  li {
+    @include rect(100%, 0.91rem);
+    border-bottom: 1px dashed #959595;
+    padding:0  $h_conpadding;
+    a{
+      div{
+        @include rect(2.31rem, 100%);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        float:left;
+      }
+    }
+
+    p{
+      display: block;
+      float:right;
+      line-height:0.91rem;
+      font-size: 0.28rem;
+      color:$h_word;
+    }
+    .iconfont{
+      content:"&#xe658;";
+      float:right;
+      line-height:0.91rem;
+      color: $h_jiantouColor;
+      font-size:0.48rem;
+    }
+  }
+
+  $h_imglist: (
+          '1':'h_phone.png',
+          '2':'h_password.png',
+  );
+  @each $key in map_keys($h_imglist) {
+    $url: nth(map_get($h_imglist, $key), 1);
+    li:nth-child(#{$key}) a div {
+      background-image: url("../img/#{$url}");
+    }
+
+    li:last-child {
+      border: 0;
+    }
+  }
+}
+.flag{
+  @include rect(0.89rem,0.42rem);
+  @include bg($h_flagOutColor);
+  border-radius:0.21rem;
+  margin-top:0.25rem;
+  float:right;
+  padding:3px;
+  position: relative;
+  .flag_in{
+    @include rect(0.83rem,0.36rem);
+    @include bg($h_flagInColor);
+    border-radius:0.18rem;
+    padding:3px;
+    @extend %center;
+    .flag_circle{
+      @include circle(0.32rem);
+      @include bg($h_flagOutColor);
+      @extend %tb;
+      right:3px;
+      .flag_Incircle{
+        @include circle(0.26rem);
+        @include bg($h_flagIncircleColor);
+        @extend %center;
+        .flag_green{
+          display: block;
+          @include circle(0.06rem);
+          @include bg($h_flaggreen);
+          margin:0.07rem 0.05rem;
+        }
+      }
+    }
+  }
+}
+/*更新结束*/

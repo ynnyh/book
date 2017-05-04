@@ -1,0 +1,305 @@
+html {
+  font-size: 100px;
+}
+
+@media (min-width: 320px) {
+  html {
+    font-size: 42.66667px;
+  }
+}
+
+@media (min-width: 360px) {
+  html {
+    font-size: 48px;
+  }
+}
+
+@media (min-width: 375px) {
+  html {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 414px) {
+  html {
+    font-size: 55.2px;
+  }
+}
+
+@media (min-width: 750px) {
+  html {
+    font-size: 100px;
+  }
+}
+
+body {
+  font-size: 16px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+  float: left;
+  position: relative;
+}
+
+.col-1 {
+  width: 8.33333%;
+}
+
+.col-2 {
+  width: 16.66667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33333%;
+}
+
+.col-5 {
+  width: 41.66667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33333%;
+}
+
+.col-8 {
+  width: 66.66667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33333%;
+}
+
+.col-11 {
+  width: 91.66667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Microsoft YaHei";
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.y_redxuan .y_li, .y_content .y_nav .y_top i {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.y_allbiao .y_san {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+html {
+  min-height: 100%;
+  background: #ffe7a7;
+  position: relative;
+}
+
+.y_allbiao {
+  width: 3.96rem;
+  height: 0.46rem;
+  background-color: #272727;
+  border-radius: 0.08rem;
+  position: relative;
+}
+
+.y_allbiao .y_biao {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.08rem;
+  overflow: hidden;
+}
+
+.y_allbiao .y_biao .y_copy {
+  display: block;
+  float: left;
+  width: 20%;
+  height: 100%;
+  border-right: 1px solid #202020;
+  color: #fff;
+  line-height: 0.46rem;
+  text-align: center;
+  font-size: 0.16rem;
+}
+
+.y_allbiao .y_san {
+  width: 0.16rem;
+  height: 0.09rem;
+  top: 0.46rem;
+}
+
+.y_allbiao .y_san img {
+  width: 100%;
+  height: 100%;
+}
+
+.y_redxuan {
+  min-width: 0.5rem;
+  height: 1.5em;
+  background-color: #fff100;
+  position: relative;
+}
+
+.y_redxuan img {
+  width: 0.15rem;
+  height: 0.51rem;
+}
+
+.y_redxuan .y_li {
+  right: 0;
+}
+
+.y_content {
+  width: 100%;
+  height: 100%;
+  padding: 0 0.4rem 0 0.23rem;
+}
+
+.y_content .y_nav {
+  width: 100%;
+  height: 1rem;
+}
+
+.y_content .y_nav .y_top {
+  width: 100%;
+  height: 0.26rem;
+  position: relative;
+}
+
+.y_content .y_nav .y_top .y_xian {
+  width: 100%;
+  height: 2px;
+  background: #a1946e;
+  float: left;
+  margin-top: 0.12rem;
+}
+
+.y_content .y_nav .y_top i {
+  padding: 0 0.07rem;
+  font-style: normal;
+  font-size: 0.14rem;
+  float: left;
+  background: #ffe7a7;
+  left: 0.23rem;
+}
+
+.y_content .y_nav .y_bottom {
+  width: 100%;
+  height: 0.74rem;
+  line-height: 0.74rem;
+}
+
+.y_content .y_nav .y_bottom h5 {
+  color: #454138;
+  font-size: 0.28rem;
+  margin-right: 0.15rem;
+  float: left;
+}
+
+.y_content .y_container {
+  width: 100%;
+  max-height: 11.47rem;
+  padding: 0 0.3rem;
+}
+
+.y_content .y_container .y_nei {
+  width: 100%;
+  height: auto;
+  font-size: 0.14rem;
+  line-height: 1.5em;
+}
+
+.y_content .y_container pre {
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
+
+.y_content .y_foot {
+  width: 100%;
+  height: 0.56rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.y_content .y_foot .y_pro {
+  width: auto;
+  height: 100%;
+  padding-left: 0.5rem;
+  float: left;
+}
+
+.y_content .y_foot .y_pro i {
+  font-style: normal;
+  font-size: 0.2rem;
+  color: #363028;
+}
+
+.y_content .y_foot .y_pro b {
+  font-weight: normal;
+  font-size: 0.2rem;
+  color: #363028;
+}
+
+.y_content .y_foot .y_page {
+  width: auto;
+  height: 100%;
+  float: right;
+  padding-right: 0.4rem;
+}
+
+.y_content .y_foot .y_page b {
+  font-weight: normal;
+  font-size: 0.2rem;
+  color: #363028;
+}
+
+.y_content .y_foot .y_page i {
+  font-style: normal;
+  font-size: 0.2rem;
+  color: #363028;
+}
+
+.y_content .y_foot .y_page em {
+  font-style: normal;
+  font-size: 0.2rem;
+  color: #363028;
+}

@@ -1,0 +1,352 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header .back {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.header .headercon, .header .headercon .allrow, .header .headercon .allrow .smallbox, .star ul, .zhezhao .combox .success, .zhezhao .combox .fail {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+html {
+  font-size: 100px;
+}
+
+@media (min-width: 320px) {
+  html {
+    font-size: 42.66667px;
+  }
+}
+
+@media (min-width: 360px) {
+  html {
+    font-size: 48px;
+  }
+}
+
+@media (min-width: 375px) {
+  html {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 412px) {
+  html {
+    font-size: 54.93333px;
+  }
+}
+
+@media (min-width: 414px) {
+  html {
+    font-size: 55.2px;
+  }
+}
+
+@media (min-width: 750px) {
+  html {
+    font-size: 100px;
+  }
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 136.53333px;
+  }
+}
+
+body {
+  font-size: 16px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+  float: left;
+  position: relative;
+}
+
+.col-1 {
+  width: 8.33333%;
+}
+
+.col-2 {
+  width: 16.66667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33333%;
+}
+
+.col-5 {
+  width: 41.66667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33333%;
+}
+
+.col-8 {
+  width: 66.66667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33333%;
+}
+
+.col-11 {
+  width: 91.66667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+body .zhezhao {
+  width: 100%;
+  height: 270%;
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 222;
+}
+
+.header {
+  width: 100%;
+  height: 1rem;
+  padding: 0 0.24rem;
+  background-color: #29a6dc;
+  position: relative;
+}
+
+.header .back {
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  left: 0.24rem;
+  background: url(../img/back.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+.header .headercon {
+  width: 3rem;
+  height: 1rem;
+  padding: 0.1rem 0;
+}
+
+.header .headercon h2 {
+  width: 100%;
+  height: 0.46rem;
+  font-size: 0.4rem;
+  color: #fff;
+  text-align: center;
+  padding: 0.03rem 0;
+}
+
+.header .headercon .allrow {
+  width: 100%;
+  height: 0.1rem;
+  position: relative;
+  padding: 3px 0;
+}
+
+.header .headercon .allrow .smallbox {
+  width: 0.34rem;
+  height: 3px;
+  background: url(../img/lhh_row.png) center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header .headercon p {
+  width: 100%;
+  height: 0.25rem;
+  text-align: center;
+  font-size: 0.18rem;
+  color: #fff;
+  line-height: 0.25rem;
+}
+
+.star {
+  width: 100%;
+  height: 1.5rem;
+  position: relative;
+  border-bottom: 2px solid #aaa;
+  margin-bottom: 0.4rem;
+}
+
+.star ul {
+  width: 6.5rem;
+  height: 0.9rem;
+}
+
+.star ul li.iconfont.icon-weibiaoti1 {
+  width: 0.9rem;
+  height: 0.9rem;
+  float: left;
+  font-size: 0.6rem;
+  line-height: 0.9rem;
+  text-align: center;
+  color: #f9d408;
+  margin-right: 0.2rem;
+  margin-left: 0.2rem;
+}
+
+form {
+  width: 100%;
+  height: 3.7rem;
+  padding: 0 0.24rem;
+}
+
+form #zhengwen {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.1rem;
+  resize: none;
+  outline: none;
+  font-size: 0.20rem;
+}
+
+.zhezhao .combox {
+  width: 4.8rem;
+  height: 2.9rem;
+  position: fixed;
+  left: 25%;
+  top: 30%;
+  border-radius: 0.1rem;
+  box-shadow: 0 0 0.05rem #ccc;
+  background: url(../img/lhh_viewbox.png) center center;
+  background-size: cover;
+  background-resize: no-repeat;
+}
+
+.zhezhao .combox .box {
+  width: 100%;
+  height: 0.6rem;
+  position: absolute;
+  left: 0;
+  bottom: 0.2rem;
+  padding: 0 0.15rem;
+}
+
+.zhezhao .combox .box .quxiao {
+  width: 2rem;
+  height: 0.6rem;
+  margin: 0 0.15rem;
+  float: left;
+  background: url(../img/lhh_quxiao.png) center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.zhezhao .combox .box .sure#success {
+  display: block;
+  width: 2rem;
+  height: 0.6rem;
+  margin: 0 0.1rem;
+  float: left;
+  background: url(../img/lhh_sure.png) center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.zhezhao .combox .box .sure#failed {
+  display: block;
+  width: 2rem;
+  height: 0.6rem;
+  margin: 0 0.1rem;
+  float: left;
+  background: url(../img/lhh_shezhi.png) center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.zhezhao .combox .success {
+  width: 3rem;
+  height: 0.9rem;
+  font-family: "微软雅黑";
+}
+
+.zhezhao .combox .success h2 {
+  width: 100%;
+  height: 0.4rem;
+  font-size: 0.24rem;
+  line-height: 0.4rem;
+  text-align: center;
+}
+
+.zhezhao .combox .success .p2 {
+  width: 100%;
+  height: 0.5rem;
+  font-size: 0.2rem;
+  line-height: 0.5rem;
+  text-align: center;
+}
+
+.zhezhao .combox .fail {
+  width: 3rem;
+  height: 1.1rem;
+  font-family: "微软雅黑";
+  display: none;
+}
+
+.zhezhao .combox .fail h2 {
+  width: 100%;
+  height: 0.3rem;
+  font-size: 0.24rem;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+.zhezhao .combox .fail .p2 {
+  width: 100%;
+  height: 0.5rem;
+  font-size: 0.2rem;
+  line-height: 0.5rem;
+  text-align: center;
+}
+
+/*# sourceMappingURL=../index.css.map */

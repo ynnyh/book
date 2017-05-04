@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width"/>
+    <title>书签</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="<?php echo CSS_PATH ?>y_bookmark.css"/></head>
+    <link rel="stylesheet" href="<?php echo CSS_PATH ?>public.css"/>
+<body>
+<!--头部-->
+    <div class="y_header">
+        <!-- 返回-->
+        <a href="#" class="y_back">
+            <span class="iconfont">&#xf0292;</span>
+        </a>
+        <div class="y_choice">
+            <div class="y_dianone">
+                <img src="<?php echo IMG_PATH ?>x_12.png" alt=""/>
+            </div>
+            <div class="y_dianone y_diantwo">
+                <img src="<?php echo IMG_PATH ?>x_12.png" alt=""/>
+            </div>
+            <a href="#" class="y_words y_showing">
+                <img src="<?php echo IMG_PATH ?>x_16.png" alt="" class="y_show"/>
+                <img src="<?php echo IMG_PATH ?>x_11.png" alt="" class="y_hid"/>
+            </a>
+            <a href="#" class="y_words y_wordstwo">
+                <img src="<?php echo IMG_PATH ?>x_13.png" alt="" class="y_show"/>
+                <img src="<?php echo IMG_PATH ?>x_15.png" alt="" class="y_hid"/>
+            </a>
+            <a href="#" class="y_words y_wordsthree">
+                <img src="<?php echo IMG_PATH ?>x_14.png" alt="" class="y_show"/>
+                <img src="<?php echo IMG_PATH ?>x_17.png" alt="" class="y_hid"/>
+            </a>
+        </div>
+    </div>
+<!--内容-->
+    <div class="y_content">
+        <div class="y_remeb">
+            <a href="#">
+                目前您有
+                <span class="y_get">7</span>
+                条书签记录
+            </a>
+        </div>
+        <ul class="y_bk">
+            <li class="y_bk_li">
+                <div class="y_bj">
+                    <img src="img/y_1.jpg" alt=""/>
+                </div>
+                <div class="y_zhu">
+                    <a href="#" class="y_first">
+                        <b class="y_title">第一章</b>
+                        <b class="y_cont">口吐莲花, 会说话的聪明女人惹...</b>
+                    </a>
+                    <a href="#" class="y_jie">“不绝”之类的话,恐怕没有什么人会认为你真的是对他...</a>
+                    <div class="y_san">
+                        <span class="iconfont y_nao">&#xe76f;</span>
+                        <div class="y_time">22:11</div>
+                        <div class="y_data">2016/11/11</div>
+                        <div class="y_per">12%</div>
+                        <span class="iconfont y_eye">&#xe603;</span>
+                    </div>
+                </div>
+            </li>
+            <li class="y_bk_li">
+                <div class="y_bj">
+                    <img src="img/y_1.jpg" alt=""/>
+                </div>
+                <div class="y_zhu">
+                    <a href="#" class="y_first">
+                        <b class="y_title">第一章</b>
+                        <b class="y_cont">口吐莲花, 会说话的聪明女人惹...</b>
+                    </a>
+                    <a href="#" class="y_jie">“不绝”之类的话,恐怕没有什么人会认为你真的是对他...</a>
+                    <div class="y_san">
+                        <span class="iconfont y_nao">&#xe76f;</span>
+                        <div class="y_time">22:11</div>
+                        <div class="y_data">2016/11/11</div>
+                        <div class="y_per">12%</div>
+                        <span class="iconfont y_eye">&#xe603;</span>
+                    </div>
+                </div>
+            </li>
+            <li class="y_del">
+                <div class="y_zhu">
+                    <a href="#" class="y_first">
+                        <b class="y_title">第一章</b>
+                        <b class="y_cont">口吐莲花, 会说话的聪明女人惹...</b>
+                    </a>
+                    <a href="#" class="y_jie">“不绝”之类的话,恐怕没有什么人会认为你真的是对他...</a>
+                    <div class="y_san">
+                        <span class="iconfont y_nao">&#xe76f;</span>
+                        <div class="y_time">22:11</div>
+                        <div class="y_per">12%</div>
+                        <span class="iconfont y_eye">&#xe603;</span>
+                    </div>
+                </div>
+                <!-- 删除按钮-->
+                <div class="y_shan">
+                    <span class="iconfont y_dele">&#xe60a;</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,247 @@
+@import "base";
+@import "cols";
+
+
+/*变量定义*/
+$h_themeColor:#29a6dc;
+$h_bottomColor:#151c2b;
+$h_jiantouColor:#6ec3e7;
+$h_bottomborderColor:#717171;
+$h_bottomNoColor:#6c6c6d;
+$h_bottomCheckColor:#fff;
+$h_word:#7b7b7b;
+$h_bgcolor:#fafafa;
+$h_zhezhaoColor:rgba(0,0,0,0.3);
+$h_alertColor:#fff;
+$h_alertTopColor:#29dcbc;
+$h_conpadding:0.24rem;
+
+body{
+  @include bg($h_bgcolor);
+}
+/*头部开始*/
+.h_header{
+
+  @include rect(100%,1rem);
+  @include bg($h_themeColor);
+  padding:0 $h_conpadding;
+
+  $h_imglist:(
+
+          '1':'h_set.gif' 'center' 'left' '0.51rem',
+          '2':'h_personalcenter.png' 'bottom' 'left' '1.85rem',
+          '3':'h_email.gif' 'center' 'right' '0.51rem'
+
+  );
+  @each $key in map_keys($h_imglist){
+    $url:nth(map_get($h_imglist,$key),1);
+    $position:nth(map_get($h_imglist,$key),2);
+    $float:nth(map_get($h_imglist,$key),3);
+    $width:nth(map_get($h_imglist,$key),4);
+     div:nth-child(#{$key}){
+      width:#{$width};
+      height:1rem;
+      background-image: url("../img/#{$url}");
+      background-repeat:no-repeat;
+      background-position:center #{$position};
+      background-size:contain;
+      float: #{$float};
+    }
+  }
+  div:nth-child(2){
+    @extend %lr;
+  }
+}
+/*头部结束*/
+/*中间开始*/
+.h_middle{
+  @include rect(100%,4.18rem);
+  position: relative;
+  img{
+    width:1.85rem;
+    @extend %lr;
+    top:0.87rem;
+  }
+  >ul{
+    @include rect(1.22rem,0.24rem);
+    @extend %lr;
+    top:2.9rem;
+    li{
+      @include rect(33.333%,0.24rem);
+      float:left;
+      position: relative;
+      img{
+        width:0.26rem;
+        @extend %center;
+      }
+
+    }
+  }
+  >span{
+    display: block;
+    @include rect(100%,0.32rem);
+    text-align: center;
+    font-size:0.32rem;
+    font-weight: normal;
+    position: absolute;
+    top:3.2rem;
+    line-height: 0.32rem;
+    color: $h_word;
+  }
+  >div{
+    @include rect(100%,0.24rem);
+    position: absolute;
+    bottom:0.3rem;
+    text-align: center;
+    line-height:0.24rem;
+    font-size: 0.22rem;
+    color: $h_word;
+  }
+}
+/*中间结束*/
+/*更新开始*/
+.update {
+  @include rect(7rem, 3.64rem);
+  background: #fff;
+  margin: 0 auto;
+  box-shadow: 0 0 0.23rem #ccc;
+  border-radius: 0.15rem;
+  li {
+    @include rect(100%, 25%);
+    border-bottom: 1px dashed #959595;
+    padding-right: $h_conpadding;
+    div {
+      @include rect(2.18rem, 100%);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      overflow: hidden;
+      float:left;
+    }
+    p{
+      display: block;
+      float:right;
+      line-height:0.91rem;
+      font-size: 0.28rem;
+    }
+    .iconfont{
+      content:"&#xe658;";
+      float:right;
+      line-height:0.91rem;
+      color: $h_jiantouColor;
+      font-size:0.48rem;
+    }
+  }
+
+  $h_imglist: (
+          '1':'h_banben.png',
+          '2':'h_check.png',
+          '3':'h_contect.png',
+          '4':'h_yijian.png'
+  );
+  @each $key in map_keys($h_imglist) {
+    $url: nth(map_get($h_imglist, $key), 1);
+    li:nth-child(#{$key}) div {
+      background-image: url("../img/#{$url}");
+    }
+
+    li:last-child {
+      border: 0;
+    }
+  }
+}
+/*更新结束*/
+/*底部开始*/
+.bottom{
+  @include rect(100%,1rem);
+  @include bg($h_bottomColor);
+  padding:0 $h_conpadding;
+  position: fixed;
+  bottom:0;
+  >div{
+    @include rect(33.333%,100%);
+    padding:0.05rem 0;
+    float:left;
+    >ul{
+      @include rect(100%,100%);
+      border-right:1px solid $h_bottomborderColor;
+      text-align: center;
+      color:$h_bottomNoColor;
+      .iconfont{
+        font-size: 0.38rem;
+        line-height:0.6rem;
+      }
+      li{
+        font-size: 0.24rem;
+        line-height:0.3rem;
+      }
+    }
+    .active{
+      color: $h_bottomCheckColor;
+    }
+  }
+  >div:last-child >ul{
+    border-right:0;
+    .iconfont{
+      font-size: 0.48rem;
+    }
+  }
+}
+/*底部结束*/
+/*遮罩开始*/
+.zhezhao{
+  @include rect(100%,100%);
+  @include bg($h_zhezhaoColor);
+  position: fixed;
+  top:0;
+  left:0;
+  .alert{
+    @include rect(4.8rem,2.96rem);
+    @extend %center;
+    @include bg($h_alertColor);
+    border-radius: 0.15rem;
+    overflow: hidden;
+    .top{
+      @include rect(100%,0.72rem);
+      @include bg($h_alertTopColor);
+      @extend %lr;
+      $img_list:(
+              '1':'h_dian_right.png' '0.5rem' '0.21rem' '0.72rem' '' '0' '' '100% 20%',
+              '2':'h_alert_update.png' '1.76rem' '0.42rem' '0' '0' '0.5rem' '' 'cover',
+              '3':'h_dian_right.png' '0.5rem' '0.21rem' '0.72rem' '' '' '0' '100% 20%'
+      );
+      @each $key in map_keys($img_list){
+        $url:nth(map_get($img_list,$key),1);
+        $width:nth(map_get($img_list,$key),2);
+        $height:nth(map_get($img_list,$key),3);
+        $top:nth(map_get($img_list,$key),4);
+        $bottom:nth(map_get($img_list,$key),5);
+        $left:nth(map_get($img_list,$key),6);
+        $right:nth(map_get($img_list,$key),7);
+        $size:nth(map_get($img_list,$key),8);
+        div:nth-child(#{$key}){
+          position: absolute;
+          top:#{$top};
+          bottom:#{$bottom};
+          right:#{$right};
+          left:#{$left};
+          @include rect(#{$width},#{$height});
+          background-image:url("../img/#{$url}");
+          background-size:#{$size};
+          background-repeat:no-repeat;
+        }
+      }
+      .title{
+        margin:auto;
+      }
+    }
+    .bottom{
+      @include rect(2.24rem,1rem);
+      @include bg(null);
+      @extend %center;
+      background:url("../img/h_alertword.png") no-repeat;
+      background-size:cover;
+    }
+  }
+}
+/*遮罩结束*/

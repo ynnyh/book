@@ -1,0 +1,267 @@
+@import "_base";
+@import "_cols";
+$theme-color: #29a6dc;
+$back-color:#2a3441;
+$word-color:#357fe4;
+html{
+    height: 100%;
+    position: relative;
+    .foot{
+        @include rect(100%,1.27rem);
+        background: #151c2b;
+        position:fixed;
+        left:0;
+        right:0;
+        margin:auto;
+        bottom: 0;
+        .lookall{
+            display: block;
+            @extend %lr;
+            bottom: 0.38rem;
+            @include rect(1.45rem,0.51rem);
+            background: url(../img/lhh_lookall.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+}
+//头部
+.y_header{
+    width:100%;
+    height:1rem;
+    @include bg($theme-color);
+    position:relative;
+    .y_back{
+        display:block;
+        @include circle(0.44rem);
+        @include bg(#fff);
+        @extend %tb;
+        line-height:0.44rem;
+        text-align:center;
+        left:0.24rem;
+        color:$word-color;
+    }
+    //  选项卡部分
+    .y_choice{
+        width:5.72rem;
+        height:0.84rem;
+        border-radius:0.84rem;
+        @include bg(#2a3441);
+        @extend %center;
+        .y_dianone{
+            width:0.03rem;
+            height:0.59rem;
+            @extend %tb;
+            left:1.93rem;
+            img{
+                width:100%;
+                height:100%;
+            }
+        }
+        .y_dianone.y_diantwo{
+            left:3.86rem;
+        }
+        //  文字部分
+        .y_words{
+            width:1.9rem;
+            height:0.84rem;
+            @extend %tb;
+            left:0;
+            .y_show{
+                width:0.59rem;
+                height:0.34rem;
+                @extend %center;
+            }
+            .y_hid{
+                display:none;
+                width:1.7rem;
+                height:0.76rem;
+                @extend %center;
+            }
+        }
+        .y_words.y_showing{
+            .y_show{
+                display:none;
+            }
+            .y_hid{
+                display:block;
+            }
+        }
+        .y_words.y_wordstwo{
+            left:1.96rem;
+            .y_show{
+                width:0.73rem;
+                height:0.35rem;
+            }
+            .y_hid{
+                width:1.68rem;
+                height:0.72rem;
+            }
+        }
+        .y_words.y_wordsthree{
+            left:3.89rem;
+            .y_show{
+                width:0.48rem;
+                height:0.35rem;
+            }
+            .y_hid{
+                width:1.68rem;
+                height:0.71rem;
+            }
+        }
+    }
+}
+
+
+
+
+//读书笔记提示
+.count{
+    @include rect(100%,0.48rem);
+    padding: 0 0.24rem;
+    background: #e5e5e5;
+    p{
+        @include rect(100%,0.48rem);
+        font-size: 0.2rem;
+        color: #979696;
+        line-height: 0.48rem;
+        text-align: center;
+    }
+}
+//笔记列表
+.notelist{
+    @include rect(100%,auto);
+    padding: 0 0.24rem;
+    ul{
+         @include rect(100%,auto);
+         li{
+             @include rect(100%,auto);
+             overflow: hidden;
+         }
+         li .leftimg{
+             @include rect(0.9rem,1.9rem);
+             float: left;
+             background: url(../img/lhh_pen.png) center center;
+             background-size: contain;
+             background-repeat: no-repeat;
+             margin-right: 0.2rem;
+         }
+         li .right{
+             float: left;
+             @include rect(5.8rem,100%);
+            h2{
+                @include rect(100%,0.38rem);
+                padding-top: 0.1rem;
+                font-size: 0.28rem;
+            }
+            .p1{
+                @include rect(100%,0.34rem);
+                font-size: 0.18rem;
+                line-height: 0.34rem;
+                color: #6d6a6a;
+                overflow: hidden;
+            }
+            .descripe{
+                @include rect(5.35rem,0.9rem);
+                padding-left: 0.2rem;
+                padding-top: 0.2rem;
+                background: url(../img/lhh_note1.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                position: relative;
+            }
+            .descripe .left.iconfont.icon-bi{
+                @include rect(0.3rem,100%);
+                float: left;
+                font-size: 0.24rem;
+                color: #e23d60;
+                text-align: center;
+            }
+            .descripe .rights{
+                @include rect(4.2rem,100%);
+                float: left;
+            }
+            .descripe .rights p{
+                 @include rect(4.2rem,100%);
+                 font-size: 0.2rem;
+                 line-height: 1.3em;
+                 color: #d9587a;
+                 overflow: hidden;
+            }
+            .bottom{
+                @include rect(100%,0.32rem);
+                
+            }
+            .date{
+                float: left;
+                @include rect(auto,100%);
+                margin-right: 0.1rem;
+            }
+            .date .dateimg.iconfont.icon-jinlingyingcaiwangtubiao74{
+                margin-top: 0.04rem;
+                @include circle(0.2rem);    
+                float: left;
+                margin-right: 5px;     
+                font-size: 0.18rem;
+                color: #8eb1fc;
+            }
+            .date .datetext{
+                float: left;
+                @include rect(auto,100%);
+                font-size: 0.18rem;
+                line-height: 0.32rem;
+                color: #4d4b4b;
+            }
+            .bottom .eye .dateimg.iconfont.icon-yanjing{
+                margin-top: 0.04rem;
+                @include rect(0.3rem,0.15rem); 
+                font-size: 0.26rem;
+                color: #fb93ec;
+                float: left;
+            }
+         }
+         .third .right .descripe{
+             height: 0.7rem;
+             padding-top: 0.1rem;
+             background: none;
+             .left.iconfont.icon-bi{
+                 color: #bbb;
+             }
+             .rights p{
+                 color: #f22953;
+             }
+         } 
+         li.active{
+             width: 7.5rem;
+             height: 1.75rem;
+             padding-left: 0.74rem;
+             background: url(../img/lhh_note21.png);
+             background-size: cover;
+             position: relative;
+             z-index: 11;
+             left: -0.24rem;
+             h2,.p1{
+                 color: #fff;
+             }
+             .right .descripe{
+                 height: 0.65rem;
+                 padding-top: 0.1rem;
+                 background: none;
+             }
+             .right .descripe .left.iconfont.icon-bi{
+                 color: #fff;
+             }
+             .right .descripe .rights p{
+                 color: #119260;
+             }
+             .right .date .dateimg.iconfont.icon-jinlingyingcaiwangtubiao74{
+                 color: #fff;
+             }
+             .right .bottom .eye .dateimg.iconfont.icon-yanjing{
+                 color: #fff;
+             }
+         }
+    }
+}
+//页脚
+

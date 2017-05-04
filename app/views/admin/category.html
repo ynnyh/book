@@ -1,0 +1,43 @@
+<?php include VIEW.'/admin/header.html' ?>
+<?php include VIEW.'/admin/sidenav.html' ?>
+    <div class="col-xs-12 col-sm-9">
+
+    <div class="panel panel-danger">
+        <div class="panel-heading">
+            <h3 class="panel-title">分类管理</h3>
+        </div>
+        <div class="panel-body">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>序号</th>
+                        <th>名称</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody class="wat">
+                    <?php foreach($categories as $k=>$v): ?>
+                        <tr data-id="<?php echo $v['cate_id'] ?>">
+                            <td><?php echo $v['cate_id'] ?></td>
+                            <td><input type="text" value="<?php echo $v['cate_name'] ?>"></td>
+                            <td style="cursor:pointer" class="delete_cate">
+                                <span class="glyphicon glyphicon-remove" style="color:red"></span>
+                            </td>
+                        </tr>
+                    <?php endforeach; ?>
+                </tbody>
+            </table>
+            <!--添加按钮-->
+            <div class="add_cats text-center" style="width:80px;margin:0 auto;background:greenyellow;cursor:pointer">
+                <span class="glyphicon glyphicon-plus"></span>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+    </div>
+</div>
+<?php include VIEW.'/admin/footer.html' ?>
+<script src="<?php echo JS_PATH.'category.js' ?>"></script>
+

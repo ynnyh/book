@@ -1,0 +1,429 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Microsoft YaHei";
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.y_hidheader .y_back, .y_hidheader .y_download, .y_hidheader .y_plus, .y_book .y_cube, .y_content .y_nav .y_top i, .y_change .y_topc .y_tiao .y_bar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+html {
+  font-size: 100px;
+}
+
+@media (min-width: 320px) {
+  html {
+    font-size: 42.66667px;
+  }
+}
+
+@media (min-width: 360px) {
+  html {
+    font-size: 48px;
+  }
+}
+
+@media (min-width: 375px) {
+  html {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 414px) {
+  html {
+    font-size: 55.2px;
+  }
+}
+
+@media (min-width: 750px) {
+  html {
+    font-size: 100px;
+  }
+}
+
+body {
+  font-size: 16px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+  float: left;
+  position: relative;
+}
+
+.col-1 {
+  width: 8.33333%;
+}
+
+.col-2 {
+  width: 16.66667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33333%;
+}
+
+.col-5 {
+  width: 41.66667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33333%;
+}
+
+.col-8 {
+  width: 66.66667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33333%;
+}
+
+.col-11 {
+  width: 91.66667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+html {
+  min-height: 100%;
+  background: #ffe7a7;
+  position: relative;
+}
+
+.y_hidheader {
+  width: 100%;
+  height: 1rem;
+  background-color: #29a6dc;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.y_hidheader .y_back {
+  display: block;
+  width: 0.44rem;
+  height: 0.44rem;
+  border-radius: 50%;
+  background-color: #fff;
+  line-height: 0.44rem;
+  text-align: center;
+  left: 0.24rem;
+  color: #357fe4;
+}
+
+.y_hidheader .y_back span {
+  font-size: 0.16rem;
+}
+
+.y_hidheader .y_download {
+  display: block;
+  width: 0.44rem;
+  height: 0.44rem;
+  border-radius: 50%;
+  background-color: #fff;
+  right: 0.24rem;
+  border: 1px solid #076cbe;
+  line-height: 0.44rem;
+  text-align: center;
+  color: #357fe4;
+  font-size: 0.14rem;
+}
+
+.y_hidheader .y_download span {
+  font-size: 0.16rem;
+}
+
+.y_hidheader .y_plus {
+  width: auto;
+  height: 100%;
+  line-height: 1rem;
+  color: #fff;
+  right: 1rem;
+}
+
+.y_hidheader .y_plus span {
+  font-size: 0.44rem;
+}
+
+.y_book {
+  display: block;
+  width: 1.01rem;
+  height: 0.78rem;
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.y_book .y_cir {
+  width: 0.78rem;
+  height: 0.78rem;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.y_book .y_cube {
+  width: 0.62rem;
+  height: 0.78rem;
+  background-color: #fff;
+  left: 0.39rem;
+  line-height: 0.78rem;
+  color: #357fe4;
+}
+
+.y_book .y_cube span {
+  font-size: 0.45rem;
+}
+
+.y_moon {
+  display: block;
+  width: 0.57rem;
+  height: 0.57rem;
+  border-radius: 50%;
+  background-color: #28dbbb;
+  position: fixed;
+  left: 0.23rem;
+  bottom: 3.2rem;
+  line-height: 0.57rem;
+  text-align: center;
+}
+
+.y_moon span {
+  font-size: 0.34rem;
+  color: #ffe9b0;
+}
+
+.y_content {
+  width: 100%;
+  height: 100%;
+  padding: 0 0.4rem 0 0.23rem;
+}
+
+.y_content .y_nav {
+  width: 100%;
+  height: 1rem;
+}
+
+.y_content .y_nav .y_top {
+  width: 100%;
+  height: 0.26rem;
+  position: relative;
+}
+
+.y_content .y_nav .y_top .y_xian {
+  width: 100%;
+  height: 2px;
+  background: #a1946e;
+  float: left;
+  margin-top: 0.12rem;
+}
+
+.y_content .y_nav .y_top i {
+  padding: 0 0.07rem;
+  font-style: normal;
+  font-size: 0.14rem;
+  float: left;
+  background: #ffe7a7;
+  left: 0.23rem;
+}
+
+.y_content .y_nav .y_bottom {
+  width: 100%;
+  height: 0.74rem;
+  line-height: 0.74rem;
+}
+
+.y_content .y_nav .y_bottom h5 {
+  color: #454138;
+  font-size: 0.28rem;
+  margin-right: 0.15rem;
+  float: left;
+}
+
+.y_content .y_container {
+  width: 100%;
+  max-height: 11.47rem;
+  padding: 0 0.3rem;
+}
+
+.y_content .y_container .y_nei {
+  width: 100%;
+  height: auto;
+  font-size: 0.14rem;
+  line-height: 1.5em;
+}
+
+.y_content .y_container pre {
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
+
+.y_content .y_foot {
+  width: 100%;
+  height: 0.56rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.y_content .y_foot .y_pro {
+  width: auto;
+  height: 100%;
+  padding-left: 0.5rem;
+  float: left;
+}
+
+.y_content .y_foot .y_pro i {
+  font-style: normal;
+  font-size: 0.2rem;
+  color: #363028;
+}
+
+.y_content .y_foot .y_pro b {
+  font-weight: normal;
+  font-size: 0.2rem;
+  color: #363028;
+}
+
+.y_content .y_foot .y_page {
+  width: auto;
+  height: 100%;
+  float: right;
+  padding-right: 0.4rem;
+}
+
+.y_content .y_foot .y_page b {
+  font-weight: normal;
+  font-size: 0.2rem;
+  color: #363028;
+}
+
+.y_content .y_foot .y_page i {
+  font-style: normal;
+  font-size: 0.2rem;
+  color: #363028;
+}
+
+.y_content .y_foot .y_page em {
+  font-style: normal;
+  font-size: 0.2rem;
+  color: #363028;
+}
+
+.y_change {
+  width: 100%;
+  height: 2.26rem;
+  background-color: #151c2b;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 0 0.42rem;
+}
+
+.y_change .y_topc {
+  width: 100%;
+  height: 1.14rem;
+}
+
+.y_change .y_topc .y_go {
+  display: block;
+  width: 0.99rem;
+  height: 100%;
+  color: #c6c6c6;
+  line-height: 1.14rem;
+  float: left;
+  font-size: 0.22rem;
+}
+
+.y_change .y_topc .y_tiao {
+  width: 4.68rem;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+
+.y_change .y_topc .y_tiao .y_bar {
+  display: block;
+  width: 4.68rem;
+  height: 0.12rem;
+  border-radius: 0.12rem;
+  background-color: #71ec25;
+}
+
+.y_change .y_topc .y_up {
+  display: block;
+  width: 0.99rem;
+  height: 100%;
+  color: #c6c6c6;
+  line-height: 1.14rem;
+  float: left;
+  font-size: 0.22rem;
+  text-align: right;
+}
+
+.y_change .y_bottomc {
+  width: 100%;
+  height: 1.1rem;
+}
+
+.y_change .y_bottomc .y_mu {
+  display: block;
+  width: 0.67rem;
+  height: 1.1rem;
+  text-align: center;
+  float: left;
+  margin: 0 0.8rem 0 0.66rem;
+}
+
+.y_change .y_bottomc .y_mu img {
+  width: 0.57rem;
+  height: 0.57rem;
+}
+
+.y_change .y_bottomc .y_mu b {
+  display: block;
+  width: 100%;
+  height: 0.53rem;
+  text-align: center;
+  font-weight: normal;
+  font-size: 0.22rem;
+  color: #c9c9ca;
+}

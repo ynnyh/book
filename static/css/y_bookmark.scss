@@ -1,0 +1,319 @@
+@import "./_base";
+@import "./_cols";
+//基础颜色
+$theme-color:#29a6dc;
+$back-color:#2a3441;
+$word-color:#357fe4;
+
+//头部
+.y_header{
+  width:100%;
+  height:1rem;
+  @include bg($theme-color);
+  position:relative;
+  .y_back{
+    display:block;
+    @include circle(0.44rem);
+    @include bg(#fff);
+    @extend %tb;
+    line-height:0.44rem;
+    text-align:center;
+    left:0.24rem;
+    color:$word-color;
+  }
+
+  //  选项卡部分
+  .y_choice{
+    width:5.72rem;
+    height:0.84rem;
+    border-radius:0.84rem;
+    @include bg(#2a3441);
+    @extend %center;
+    .y_dianone{
+      width:0.03rem;
+      height:0.59rem;
+      @extend %tb;
+      left:1.93rem;
+      img{
+        width:100%;
+        height:100%;
+      }
+    }
+    .y_dianone.y_diantwo{
+      left:3.86rem;
+    }
+    //  文字部分
+    .y_words{
+      width:1.9rem;
+      height:0.84rem;
+      @extend %tb;
+      left:0;
+      .y_show{
+        width:0.59rem;
+        height:0.34rem;
+        @extend %center;
+      }
+      .y_hid{
+        display:none;
+        width:1.7rem;
+        height:0.76rem;
+        @extend %center;
+      }
+    }
+    .y_words.y_showing{
+      .y_show{
+        display:none;
+      }
+      .y_hid{
+        display:block;
+      }
+    }
+    .y_words.y_wordstwo{
+      left:1.96rem;
+      .y_show{
+        width:0.73rem;
+        height:0.35rem;
+      }
+      .y_hid{
+        width:1.68rem;
+        height:0.72rem;
+      }
+    }
+    .y_words.y_wordsthree{
+      left:3.89rem;
+      .y_show{
+        width:0.48rem;
+        height:0.35rem;
+      }
+      .y_hid{
+        width:1.68rem;
+        height:0.71rem;
+      }
+    }
+  }
+
+}
+//内容部分
+.y_content{
+  width:100%;
+  height:11.95rem;
+  background:#fff;
+  overflow:hidden;
+  //书签记录
+  .y_remeb{
+    width:100%;
+    height:0.48rem;
+    text-align:center;
+    background:#e5e5e5;
+    a{
+      font-size:0.16rem;
+      color:#a8a8a8;
+      line-height:0.48rem;
+      .y_get{
+        font-size:0.16rem;
+        line-height:0.48rem;
+      }
+    }
+  }
+//内容部分
+  .y_bk{
+    width:100%;
+    height:auto;
+    background:#fff;
+    position:relative;
+    .y_bk_li{
+      width:100%;
+      height:auto;
+      border-bottom:1px dashed #999999;
+      padding:0 0.27rem;
+      overflow:hidden;
+      box-sizing:border-box;
+      .y_bj{
+        width:0.67rem;
+        height:0.935rem;
+        margin-left:0.06rem;
+        padding-top:0.305rem;
+        float:left;
+        img{
+          width:0.67rem;
+          height:0.63rem;
+        }
+      }
+      .y_zhu{
+        width:6.05rem;
+        height:auto;
+        overflow:hidden;
+        padding-left:0.25rem;
+        float:left;
+        .y_first{
+          display:block;
+          width:100%;
+          height:0.43rem;
+          overflow:hidden;
+          line-height:0.43rem;
+          b{
+            float:left;
+            color:#000;
+            font-size:0.22rem;
+            &:nth-child(1){
+              margin-right:0.22rem;
+            }
+          }
+        }
+        .y_jie{
+          display:block;
+          width:100%;
+          height:0.46rem;
+          line-height:0.46rem;
+          color:#7e7e7e;
+          font-size:0.14rem;
+          overflow:hidden;
+        }
+        .y_san{
+          width:100%;
+          min-height:0.26rem;
+          overflow:hidden;
+          .y_nao{
+            display:block;
+            width:0.24rem;
+            padding-left:0.08rem;
+            color:#6797ff;
+            float:left;
+            margin-right:0.2rem;
+            font-size:0.16rem;
+          }
+          .y_time{
+            width:auto;
+            height:0.26rem;
+            //line-height:0.26rem;
+            color:#7f7f7f;
+            font-size:0.14rem;
+            float:left;
+            margin-right:0.16rem;
+          }
+          .y_data{
+            min-width:0.72rem;
+            height:0.26rem;
+            //line-height:0.26rem;
+            color:#7f7f7f;
+            float:left;
+            font-size:0.14rem;
+          }
+          .y_per{
+            min-width:0.27rem;
+            height:0.26rem;
+            color:#7f7f7f;
+            float:right;
+            font-size:0.14rem;
+            margin-right:0.4rem;
+          }
+          .y_eye{
+            display:block;
+            width:auto;
+            height:0.26rem;
+            color:#f336db;
+            //line-height:0.26rem;
+            margin-right:0.08rem;
+            float:right;
+          }
+        }
+      }
+    }
+    .y_del{
+      width:100%;
+      height:auto;
+      border-bottom:2px solid #29dcbc;
+      border-top:1px solid #29dcbc;
+      overflow:hidden;
+      box-sizing:border-box;
+      position:relative;
+
+      .y_zhu{
+        width:6.6rem;
+        height:auto;
+        overflow:hidden;
+        float:left;
+        background:#29dcbc;
+        padding:0 0.27rem;
+        .y_first{
+          display:block;
+          width:100%;
+          height:0.43rem;
+          overflow:hidden;
+          line-height:0.43rem;
+          b{
+            float:left;
+            color:#f9f9f9;
+            font-size:0.22rem;
+            &:nth-child(1){
+              margin-right:0.22rem;
+            }
+          }
+        }
+        .y_jie{
+          display:block;
+          width:100%;
+          height:0.46rem;
+          line-height:0.46rem;
+          color:#f8f8f8;
+          font-size:0.14rem;
+          overflow:hidden;
+        }
+        .y_san{
+          width:100%;
+          min-height:0.26rem;
+          overflow:hidden;
+          .y_nao{
+            display:block;
+            width:0.24rem;
+            padding-left:0.08rem;
+            color:#dcf7f2;
+            float:left;
+            margin-right:0.2rem;
+            font-size:0.16rem;
+          }
+          .y_time{
+            width:auto;
+            height:0.26rem;
+            //line-height:0.26rem;
+            color:#f4f4f4;
+            font-size:0.14rem;
+            float:left;
+            margin-right:0.16rem;
+          }
+          .y_per{
+            min-width:0.27rem;
+            height:0.26rem;
+            color:#fcfffe;
+            float:right;
+            font-size:0.14rem;
+            margin-right:0.4rem;
+          }
+          .y_eye{
+            display:block;
+            width:auto;
+            height:0.26rem;
+            color:#ddf2ec;
+            //line-height:0.26rem;
+            margin-right:0.08rem;
+            float:right;
+          }
+        }
+      }
+    }
+  //  删除按钮
+   .y_shan{
+     @include circle(0.31rem);
+     border:1px solid #2fddbe;
+     line-height:0.31rem;
+     text-align:center;
+     @extend %tb;
+     right:0.27rem;
+     .y_dele{
+       color:#2fddbe;
+       font-size:0.14rem;
+     }
+   }
+  }
+}
+

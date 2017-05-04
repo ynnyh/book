@@ -1,0 +1,312 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+ul, li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.h_header div:nth-child(2), .h_middle img, .h_middle > ul, .zhezhao .alert .top {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto; }
+
+.h_middle > ul li img, .zhezhao .alert, .zhezhao .alert .bottom {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto; }
+
+html {
+  font-size: 100px; }
+
+@media (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+@media (min-width: 750px) {
+  html {
+    font-size: 100px; } }
+
+body {
+  font-size: 16px; }
+
+.row::after {
+  content: "";
+  clear: both; }
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+  float: left;
+  position: relative; }
+
+.col-1 {
+  width: 8.33333%; }
+
+.col-2 {
+  width: 16.66667%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.33333%; }
+
+.col-5 {
+  width: 41.66667%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.33333%; }
+
+.col-8 {
+  width: 66.66667%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.33333%; }
+
+.col-11 {
+  width: 91.66667%; }
+
+.col-12 {
+  width: 100%; }
+
+/*变量定义*/
+body {
+  background-color: #fafafa; }
+
+/*头部开始*/
+.h_header {
+  width: 100%;
+  height: 1rem;
+  background-color: #29a6dc;
+  padding: 0 0.24rem; }
+  .h_header div:nth-child(1) {
+    width: 0.51rem;
+    height: 1rem;
+    background-image: url("../img/h_set.gif");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    float: left; }
+  .h_header div:nth-child(2) {
+    width: 1.85rem;
+    height: 1rem;
+    background-image: url("../img/h_personalcenter.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+    float: left; }
+  .h_header div:nth-child(3) {
+    width: 0.51rem;
+    height: 1rem;
+    background-image: url("../img/h_email.gif");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    float: right; }
+
+/*头部结束*/
+/*中间开始*/
+.h_middle {
+  width: 100%;
+  height: 4.18rem;
+  position: relative; }
+  .h_middle img {
+    width: 1.85rem;
+    top: 0.87rem; }
+  .h_middle > ul {
+    width: 1.22rem;
+    height: 0.24rem;
+    top: 2.9rem; }
+    .h_middle > ul li {
+      width: 33.333%;
+      height: 0.24rem;
+      float: left;
+      position: relative; }
+      .h_middle > ul li img {
+        width: 0.26rem; }
+  .h_middle > span {
+    display: block;
+    width: 100%;
+    height: 0.32rem;
+    text-align: center;
+    font-size: 0.32rem;
+    font-weight: normal;
+    position: absolute;
+    top: 3.2rem;
+    line-height: 0.32rem;
+    color: #7b7b7b; }
+  .h_middle > div {
+    width: 100%;
+    height: 0.24rem;
+    position: absolute;
+    bottom: 0.3rem;
+    text-align: center;
+    line-height: 0.24rem;
+    font-size: 0.22rem;
+    color: #7b7b7b; }
+
+/*中间结束*/
+/*更新开始*/
+.update {
+  width: 7rem;
+  height: 3.64rem;
+  background: #fff;
+  margin: 0 auto;
+  box-shadow: 0 0 0.23rem #ccc;
+  border-radius: 0.15rem; }
+  .update li {
+    width: 100%;
+    height: 25%;
+    border-bottom: 1px dashed #959595;
+    padding-right: 0.24rem; }
+    .update li div {
+      width: 2.18rem;
+      height: 100%;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      overflow: hidden;
+      float: left; }
+    .update li p {
+      display: block;
+      float: right;
+      line-height: 0.91rem;
+      font-size: 0.28rem; }
+    .update li .iconfont {
+      content: "&#xe658;";
+      float: right;
+      line-height: 0.91rem;
+      color: #6ec3e7;
+      font-size: 0.48rem; }
+  .update li:nth-child(1) div {
+    background-image: url("../img/h_banben.png"); }
+  .update li:last-child {
+    border: 0; }
+  .update li:nth-child(2) div {
+    background-image: url("../img/h_check.png"); }
+  .update li:last-child {
+    border: 0; }
+  .update li:nth-child(3) div {
+    background-image: url("../img/h_contect.png"); }
+  .update li:last-child {
+    border: 0; }
+  .update li:nth-child(4) div {
+    background-image: url("../img/h_yijian.png"); }
+  .update li:last-child {
+    border: 0; }
+
+/*更新结束*/
+/*底部开始*/
+.bottom {
+  width: 100%;
+  height: 1rem;
+  background-color: #151c2b;
+  padding: 0 0.24rem;
+  position: fixed;
+  bottom: 0; }
+  .bottom > div {
+    width: 33.333%;
+    height: 100%;
+    padding: 0.05rem 0;
+    float: left; }
+    .bottom > div > ul {
+      width: 100%;
+      height: 100%;
+      border-right: 1px solid #717171;
+      text-align: center;
+      color: #6c6c6d; }
+      .bottom > div > ul .iconfont {
+        font-size: 0.38rem;
+        line-height: 0.6rem; }
+      .bottom > div > ul li {
+        font-size: 0.24rem;
+        line-height: 0.3rem; }
+    .bottom > div .active {
+      color: #fff; }
+  .bottom > div:last-child > ul {
+    border-right: 0; }
+    .bottom > div:last-child > ul .iconfont {
+      font-size: 0.48rem; }
+
+/*底部结束*/
+/*遮罩开始*/
+.zhezhao {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0; }
+  .zhezhao .alert {
+    width: 4.8rem;
+    height: 2.96rem;
+    background-color: #fff;
+    border-radius: 0.15rem;
+    overflow: hidden; }
+    .zhezhao .alert .top {
+      width: 100%;
+      height: 0.72rem;
+      background-color: #29dcbc; }
+      .zhezhao .alert .top div:nth-child(1) {
+        position: absolute;
+        top: 0.72rem;
+        left: 0;
+        width: 0.5rem;
+        height: 0.21rem;
+        background-image: url("../img/h_dian_right.png");
+        background-size: 100% 20%;
+        background-repeat: no-repeat; }
+      .zhezhao .alert .top div:nth-child(2) {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0.5rem;
+        width: 1.76rem;
+        height: 0.42rem;
+        background-image: url("../img/h_alert_update.png");
+        background-size: cover;
+        background-repeat: no-repeat; }
+      .zhezhao .alert .top div:nth-child(3) {
+        position: absolute;
+        top: 0.72rem;
+        right: 0;
+        width: 0.5rem;
+        height: 0.21rem;
+        background-image: url("../img/h_dian_right.png");
+        background-size: 100% 20%;
+        background-repeat: no-repeat; }
+      .zhezhao .alert .top .title {
+        margin: auto; }
+    .zhezhao .alert .bottom {
+      width: 2.24rem;
+      height: 1rem;
+      background-color: rgba(180, 80, 153, 0.3);
+      background: url("../img/h_alertword.png") no-repeat;
+      background-size: cover; }
+
+/*遮罩结束*/

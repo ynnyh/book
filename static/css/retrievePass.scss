@@ -1,0 +1,217 @@
+@import "./_base";
+$con-padding:0.24rem;
+$form-padding:0.43rem;
+$theme-color:#29a6dc;
+$btn-color:3abffd;
+body{
+  overflow: hidden;
+}
+.container{
+  padding: 0 $con-padding;
+}
+.fullScreen{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #f2f2f2;
+  z-index: -100;
+}
+/*头部开始*/
+.header{
+  @include rect(100%,23%);
+  @include bg($theme-color);
+  padding-top:0.34rem;
+  .title{
+    position: relative;
+    h4{
+      font-family: 'PingFang Medium';
+      font-size: 0.36rem;
+      text-align: center;
+      color:#f2f2f2;
+      text-align: center;
+    }
+    .return{
+      position: absolute;
+      left:0;
+      top:0;
+      a{
+        display: block;
+        @include circle(0.44rem);
+        border:1px solid #076cbe;
+        background: url("../images/icon_return.png") center center no-repeat;
+        background-size: 30%;
+        @include bg(#fafafa);
+      }
+    }
+  }
+  .logo{
+    padding:40px 0;
+    font-size: 18px;
+    text-align: center;
+    color:#fff;
+  }
+}
+/*头部结束*/
+/*名人名言开始*/
+.wisdom{
+  @include rect(100%,19%);
+  display: table;
+  .content{
+    display: table-cell;
+    vertical-align: middle;
+  }
+  h6,p{
+    width:90%;
+    margin:10px auto;
+    font-family: 'PingFang Medium';
+    font-size: 0.24rem;
+    line-height: 1;
+  }
+  h6{
+    text-align: center;
+  }
+  p{
+    text-align: right;
+  }
+}
+/*名人名言结束*/
+/*表单开始*/
+.load{
+  height:40%;
+  padding-top:0.59rem;
+  .list{
+    padding:0 $form-padding;
+    li{
+      height:0.88rem;
+      margin-bottom: 0.38rem;
+      border-radius:0.44rem;
+      padding:0 0.45rem;
+      border:1px solid #3a91fd;
+      overflow: hidden;
+      @include bg(#fff);
+      .icon{
+        float: left;
+        @include rect(0.44rem,100%);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      .icon.personal{
+        background-image:url("../images/icon_personal.png");
+      }
+      .icon.password{
+        background-image:url("../images/icon_password.png") ;
+      }
+      .icon.phone{
+        background-image:url("../images/icon_phone.png") ;
+      }
+      input{
+        max-width:90%;
+        height:100%;
+        padding-left:4%;
+        font-size: 0.28rem;
+        color:#999;
+        border:0;
+        outline: none;
+      }
+    }
+    .sendCode{
+      float: left;
+      width:62%;
+      text-align: center;
+      display: table;
+      a{
+        display: table-cell;
+        vertical-align: middle;
+      }
+      h4,h3{
+        line-height: 1;
+      }
+      >a h4{
+        font-size: 0.28rem;
+      }
+      >a h3{
+        font-size: 0.24rem;
+        color:#d7d7d7;
+      }
+    }
+    .setCode{
+      padding: 0;
+      float: right;
+      width:34%;
+      >input{
+        text-align:center;
+      }
+    }
+  }
+  .sign{
+    width: 70%;
+    margin: 0 auto;
+    overflow: hidden;
+    li{
+      height:0.25rem;
+      a{
+        display: block;
+        padding-left:0.44rem;
+        height:100%;
+        font-size: 0.22rem;
+        line-height: 0.25rem;
+        color: #666;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: left center;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+    .signIn{
+      float: right;
+      a{
+        background-image: url("../images/icon_sign.png");
+      }
+    }
+  }
+}
+/*表单结束*/
+/*提交开始*/
+.button{
+  width:75%;
+  height:18%;
+  margin:0 auto;
+  display:table;
+  &:hover{
+    opacity: .9;
+  }
+  >p{
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    a{
+      border-radius: 0.68rem;
+      background-color: #3abffd;
+      display: block;
+      padding:0.2rem 0;
+      color:#fff;
+      font-size: 0.28rem;
+      text-align: center;
+      line-height: 0.28rem;
+    }
+    i{
+      display: block;
+      @include circle(3px);
+      @include bg(#fff);
+      @extend %tb;
+    }
+    .left{
+      left:0.36rem;
+    }
+    .right{
+      right:0.36rem;
+    }
+  }
+
+}
+/*提交结束*/

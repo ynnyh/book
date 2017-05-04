@@ -1,0 +1,172 @@
+@charset "UTF-8";
+.button > p i {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0; }
+
+body {
+  overflow: hidden; }
+
+.container {
+  padding: 0 0.24rem; }
+
+.fullScreen {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #f2f2f2;
+  z-index: -100; }
+
+/*头部开始*/
+.header {
+  width: 100%;
+  height: 33%;
+  background-color: #29a6dc;
+  padding-top: 0.34rem; }
+  .header .title {
+    position: relative; }
+    .header .title h4 {
+      font-family: 'PingFang Medium';
+      font-size: 0.36rem;
+      text-align: center;
+      color: #f2f2f2;
+      text-align: center; }
+    .header .title .return {
+      position: absolute;
+      left: 0;
+      top: 0; }
+      .header .title .return a {
+        display: block;
+        width: 0.44rem;
+        height: 0.44rem;
+        border-radius: 50%;
+        border: 1px solid #076cbe;
+        background: url("../images/icon_return.png") center center no-repeat;
+        background-size: 30%;
+        background-color: #fafafa; }
+  .header .logo {
+    padding: 40px 0;
+    font-size: 18px;
+    text-align: center;
+    color: #fff; }
+
+/*头部结束*/
+/*名人名言开始*/
+.wisdom {
+  width: 100%;
+  height: 23%;
+  display: table; }
+  .wisdom .content {
+    display: table-cell;
+    vertical-align: middle; }
+  .wisdom h6, .wisdom p {
+    width: 90%;
+    margin: 10px auto;
+    font-family: 'PingFang Medium';
+    font-size: 0.24rem;
+    line-height: 1; }
+  .wisdom h6 {
+    text-align: center; }
+  .wisdom p {
+    text-align: right; }
+
+/*名人名言结束*/
+/*表单开始*/
+.load {
+  height: 21%; }
+  .load .list {
+    padding: 0 0.43rem; }
+    .load .list li {
+      height: 0.88rem;
+      margin-bottom: 0.38rem;
+      border-radius: 0.44rem;
+      padding: 0 0.45rem;
+      border: 1px solid #3a91fd;
+      background-color: #fff; }
+      .load .list li .icon {
+        float: left;
+        width: 0.44rem;
+        height: 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain; }
+      .load .list li .icon.personal {
+        background-image: url("../images/icon_personal.png"); }
+      .load .list li .icon.password {
+        background-image: url("../images/icon_password.png"); }
+      .load .list li input {
+        max-width: 90%;
+        height: 100%;
+        padding-left: 4%;
+        font-size: 0.28rem;
+        color: #999;
+        border: 0;
+        outline: none; }
+  .load .sign {
+    width: 70%;
+    margin: 0 auto;
+    overflow: hidden;
+  position:relative;
+  z-index: 100;}
+    .load .sign li {
+      height: 0.25rem; }
+      .load .sign li a {
+        display: block;
+        padding-left: 0.44rem;
+        height: 100%;
+        font-size: 0.22rem;
+        line-height: 0.25rem;
+        color: #666;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: left center; }
+        .load .sign li a:hover {
+          text-decoration: underline; }
+    .load .sign .key {
+      float: left; }
+      .load .sign .key a {
+        background-image: url("../images/icon_key.png"); }
+    .load .sign .signIn {
+      float: right; }
+      .load .sign .signIn a {
+        background-image: url("../images/icon_sign.png"); }
+
+/*表单结束*/
+/*提交开始*/
+.button {
+  width: 75%;
+  height: 23%;
+  margin: 0 auto;
+  display: table; }
+  .button:hover {
+    opacity: .9; }
+  .button > p {
+    display: table-cell;
+    vertical-align: middle;
+    position: relative; }
+    .button > p a {
+      border-radius: 0.68rem;
+      background-color: #3abffd;
+      display: block;
+      padding: 0.2rem 0;
+      color: #fff;
+      font-size: 0.28rem;
+      text-align: center;
+      line-height: 0.28rem; }
+    .button > p i {
+      display: block;
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+      background-color: #fff; }
+    .button > p .left {
+      left: 0.36rem; }
+    .button > p .right {
+      right: 0.36rem; }
+
+/*提交结束*/
+
+/*# sourceMappingURL=load.css.map */

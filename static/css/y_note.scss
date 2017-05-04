@@ -1,0 +1,173 @@
+@import "_base";
+@import "_cols";
+$theme-color: #29a6dc;
+html{
+    height: 100%;
+    position: relative;
+}
+
+.header{
+    width: 100%;
+    height: 1rem;
+    padding: 0 0.24rem;
+    @include bg($theme-color);
+    position: relative;
+    .back{
+        @include circle(0.45rem);
+        @extend %tb;
+        @include bg(#fff);
+        left: 0.24rem;
+        text-align:center;
+        line-height:0.45rem;
+        span{
+            font-size:0.16rem;
+            color:#41b0df;
+        }
+    }
+    .headercon{
+        @include rect(3rem,1rem);
+        @extend %center;
+        padding: 0.1rem 0;
+        h2{
+            @include rect(100%,0.46rem);
+            font-size: 0.4rem;
+            color: #fff;
+            text-align: center;
+            padding: 0.03rem 0;
+        }
+        .allrow{
+            @include rect(100%,0.1rem);
+            @extend %center;
+            position: relative;
+            padding: 3px 0;
+            .smallbox{
+                @include rect(0.34rem,3px);
+                @extend %center;
+                background: url(../img/y_6.png) center center;
+                background-repeat: no-repeat;
+                background-size: cover;                
+            }
+        }
+        p{
+            @include rect(100%,0.25rem);
+            text-align: center;
+            font-size: 0.18rem;
+            color: #fff;
+            line-height: 0.25rem;
+        }
+    }
+}
+//内容部分
+.y_time{
+    width:100%;
+    height:0.54rem;
+    padding:0 0.2rem;
+    span{
+        display:block;
+        float:left;
+        width:0.6rem;
+        height:100%;
+        line-height:0.54rem;
+        color:#838383;
+        font-size:0.26rem;
+        text-align:center;
+    }
+    .y_timer{
+        width:auto;
+        height:100%;
+        line-height:0.54rem;
+        color:#838383;
+        float:left;
+        margin-right:0.16rem;
+    }
+    .y_noon{
+        width:auto;
+        height:100%;
+        line-height:0.54rem;
+        color:#838383;
+        margin-right:0.06rem;
+        float:left;
+    }
+    .y_clock{
+        width:auto;
+        height:100%;
+        line-height:0.54rem;
+        color:#838383;
+        float:left;
+    }
+}
+//底部编辑部分
+.y_write{
+    width:100%;
+    height:3.3rem;
+    padding:0 0.2rem;
+    position:relative;
+    .y_kxian{
+        width:6.2rem;
+        height:0.02rem;
+        @include bg(#d1d1d1);
+        position:absolute;
+        top:0;
+        left:0.3rem;
+    }
+    .y_kuang{
+        width:100%;
+        height:100%;
+        border-radius:4px;
+        box-shadow:0 0 8px #f0f0f0;
+        padding:0.1rem;
+        line-height:1.2em;
+        pre{
+            font-size:0.22rem;
+        }
+        pre {white-space: pre-wrap;      white-space: -moz-pre-wrap; white-space: -pre-wrap;     white-space: -o-pre-wrap;   word-wrap: break-word;      }
+    }
+}
+.y_gai{
+    width:100%;
+    height:1rem;
+    padding:0 0.24rem;
+    margin-top:0.2rem;
+    .y_bian{
+        width:100%;
+        height:100%;
+        padding-left:0.2rem;
+        box-shadow:0 0 8px #efefef;
+        border-radius:4px;
+        border:0;
+        outline:none;
+        color:#a9a9a9;
+        font-size:0.2rem;
+    }
+}
+//编辑确认
+.y_bqk{
+    width:100%;
+    height:0.61rem;
+    padding:0 0.24rem;
+    position:relative;
+    margin-top:0.5rem;
+    .y_bikuang{
+        display:block;
+        width:1.69rem;
+        height:0.61rem;
+        @extend %tb;
+        left:1rem;
+        img{
+            width:100%;
+            height:100%;
+        }
+    }
+    .y_sure{
+        display:block;
+        width:1.69rem;
+        height:0.61rem;
+        @extend %tb;
+        right:1rem;
+        img{
+            width:100%;
+            height:100%;
+        }
+    }
+}
+

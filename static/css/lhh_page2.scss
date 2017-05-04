@@ -1,0 +1,442 @@
+@import "_base";
+@import "_cols";
+$theme-color: #29a6dc;
+.header{
+    width: 100%;
+    height: 1rem;
+    padding: 0 0.24rem;
+    @include bg($theme-color);
+    position: relative;
+    .back{
+        @include circle(0.45rem);
+        @extend %tb;
+        left: 0.24rem;
+        background: url(../img/back.png);
+        background-size: cover;
+        background-position: center center;
+    }
+}
+.content{
+    @include rect(100%,8.8rem);
+    padding: 0 0.24rem;
+    margin-top: 10px;
+    $color: #d5e1fa;
+    .read{
+        @include rect(100%,5.3rem);
+        box-shadow: 0 0 0.1rem $color;
+        padding-bottom: 0.2rem;
+        border-radius: 0.1rem;
+        .readtop{
+            @include rect(100%,3.3rem);
+//          @include bg(null);
+            .bookimg{
+                @include rect(3.1rem,100%);
+                background: url(../img/bookimg.png) center center;
+                background-size: 75% 60%;
+                background-repeat: no-repeat;
+                float: left;
+            }
+            .bookintro{
+                margin-top: 0.64rem;
+                @include rect(3.8rem,2.68rem);
+                float: left;
+                font-family: "微软雅黑";
+            }
+            .bookintro .bookname{
+                @include rect(100%,0.28rem);
+                margin-top: 0.2rem;
+                font-size: 0.28rem;
+                font-weight: bold;
+            } 
+            .bookintro .fatebook{
+                @include rect(100%,0.32rem);
+            }
+            .bookintro .fatebook .fate{
+                float: left;
+                margin-right: 0.05rem;
+                @include rect(0.6rem,0.32rem);
+                font-size: 0.2rem;
+                line-height: 0.32rem;
+                font-weight: bold;
+                color: #000;
+                padding-top: 0.05rem;
+            }
+            .bookintro .fatebook .book{
+                float: left;
+                @include rect(1rem,0.32rem);
+                font-size: 0.16rem;
+                line-height: 0.33rem;
+                color: #000;
+                padding-top: 0.05rem;
+            }
+            .bookintro p{
+                @include rect(auto,0.26rem);
+                font-size: 0.16rem;
+                line-height: 0.26rem;
+            }
+            .bookintro .star{
+                @include rect(100%,0.25rem);
+                
+            }
+            .bookintro .star li{
+                float: left;
+                @include cube(0.25rem);
+                background: url(img/star.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            .bookintro .texts{
+                @include rect(100%,0.75rem);
+                padding-right: 0.38rem;
+                font-size: 0.16rem;
+                color: #d6d6d6;
+                overflow: hidden;
+            }
+            .bookintro .list{
+                @include rect(100%,0.34rem);
+                
+            }
+            .bookintro .list li{
+                float: left;
+                margin-right: 0.15rem;
+                @include rect(auto,0.34rem);
+                padding: 0.06rem 0.18rem;
+                background: #67e479;
+                font-size: 0.2rem;
+                text-align: center;
+                line-height: 0.22rem;
+                color: #fff;
+                border-radius: 0.17rem;
+            }
+            
+        }
+        .readcenter{
+            @include rect(100%,0.95rem);
+//          @include bg(null);
+            ul{
+                @include rect(100%,100%);
+                padding: 0.1rem 0.3rem;
+                li{
+                    @include rect(2.60rem,0.7rem);
+                    float: left;
+                    margin-left: 0.3rem;
+                    margin-right: 0.3rem;
+                    border-radius: 0.35rem;
+                    box-shadow: 0 0 0.1rem $color;
+                    padding: 0 0.40rem;
+                }
+            }
+            ul li .img{
+                float: left;
+                @include rect(0.45rem,0.55rem);
+                margin-right: 0.15rem;
+                margin-top: 0.07rem;
+                img{
+                    width: 0.46rem;
+                }
+            }
+            ul li p{
+                @include rect(1.2rem,0.7rem);
+                font-size: 0.24rem;
+                line-height: 0.7rem;
+                float: left;
+                color: #000;
+            }
+        }
+        .readbottom{
+            @include rect(100%,0.88rem);
+//          @include bg(null);
+            position: relative;
+            .img{
+                @include rect(2.7rem,0.72rem);
+                @extend %center;
+                background: url(../img/nowread.png) center center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        }
+            
+    }
+    //最新书评
+    .bookcomment{
+        @include rect(100%,3.3rem);
+        .commenttitle{
+            @include rect(100%,1.1rem);
+            padding-left: 0.1rem;
+            padding-top: 0.24rem;
+            .img{
+                @include rect(0.4rem,0.65rem);
+                float: left;
+                margin-right: 0.2rem;
+                background: url(../img/pen.jpg) center center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            .texts{
+                @include rect(5rem,0.65rem);
+                float: left;
+            }
+            .texts .p1{
+                @include rect(100%,0.28rem);
+                font-size: 0.28rem;
+                font-weight: bold;
+            }
+            .texts .p2{
+                @include rect(100%,0.37rem);
+                font-size: 0.16rem;
+                line-height: 0.37rem;
+                font-family: "微软雅黑";
+                
+            }
+        }
+        .commentlist{
+            @include rect(100%,2.2rem);
+            ul{
+                @include rect(100%,100%);
+                margin-top: 0.1rem;
+                li{
+                    @include rect(100%,1.6rem);
+                    box-shadow: 0 0 0.1rem $color;
+                    margin-bottom: 0.2rem;
+                    border-radius: 0.1rem;
+                    padding-left: 0.2rem;
+                    padding-top: 0.2rem;
+                }
+            }
+            ul li .leftimg{
+                @include rect(0.85rem,1.27rem);
+                float: left;
+                position: relative;
+                margin-right: 0.3rem;
+            }
+             ul li .leftimg img{
+                 @include rect(0.85rem,0.85rem);
+             }
+             ul li .right{
+                 @include rect(5.1rem,1.3rem);
+                 float: left;
+             }
+             ul li .right .texts{
+                 @include rect(5.1rem,0.82rem);
+                 font-size: 0.2rem;
+                 color: #c0c0c0;
+                 overflow: hidden;
+                 line-height: 1.5em;
+                 border-bottom: 1px dashed #a0a0a0;
+             } 
+             ul li .right .bottom{
+                 @include rect(5.3rem,0.5rem);
+                 padding-top: 0.05rem;
+                 position: relative;
+             }
+             ul li .right .bottom .date{
+                 @include rect(1.7rem,100%);
+                 float: left;
+             }
+             ul li .right .date .dateimg{
+                 @include circle(0.4rem);
+                 box-shadow: 0 0 0.05rem $color;
+                 float: left;
+                 background: url(../img/clock.jpg) center center;
+                 background-size: 60% 60%;
+                 background-repeat: no-repeat;
+             }
+             ul li .right .date .datetext{
+                 @include rect(0.75rem,100%);
+                 margin-left: 5px;
+                 font-size: 0.14rem;
+                 line-height: 0.45rem;
+                 color: #D5D5D5;
+                 float: left;
+             }
+             ul li .right .bottom .collect{
+                 @include rect(1.4rem,100%);
+                 float: right;
+             }
+             ul li .right .bottom .collect .dateimg{
+                 background: url(../img/collect.png) center center;
+                 background-size: 60% 60%;
+                 background-repeat: no-repeat;
+             }
+        }
+    }   
+}
+//我的书签开始
+.shuqianbox{
+    @include rect(100%,2rem);
+    padding: 0 0.24rem 0.25rem;
+//  margin-bottom: 0.3rem;
+    .box{
+        @include rect(100%,1.75rem);
+        padding-left: 0.2rem;
+        padding-top: 0.6rem;
+        .shuqianlogo{
+            @include rect(100%,0.75rem);
+            .leftimg{
+                @include rect(0.5rem,100%);
+                float: left;
+            }
+            .leftimg img{
+                width: 0.5rem;
+            }
+            .righttext{
+                @include rect(4rem,100%);
+                float: left;
+                padding-left: 0.15rem;
+                font-family: "微软雅黑";
+            }
+            .righttext h2{
+                @include rect(4rem,0.3rem);
+                font-size: 0.3rem;
+                font-weight: normal;
+            }
+            .righttext p{
+                @include rect(4rem,0.45rem);
+                font-size: 0.18rem;
+                line-height: 0.45rem;
+            }
+        } 
+        .add{
+            @include rect(100%,0.9rem);
+            position: relative;
+            border-radius: 0.1rem;
+            box-shadow: 0 0 0.07rem #cee1fe;
+            .inneradd{
+                @include rect(1.9rem,100%);
+                display: block;
+                @extend %center;
+//              @include bg(null);
+            }
+            .inneradd .left.iconfont.icon-tianjia{
+                @include rect(0.5rem,100%);
+                float: left;
+                font-size: 0.4rem;
+                color: #4f9ed7;
+                text-align: center;
+                line-height: 0.9rem;
+            }
+            .inneradd p{
+                float: left;
+                @include rect(1.3rem,100%);
+                font-size: 0.28rem;
+                color: #2d2d2d;
+                line-height: 0.9rem;
+                margin-left: 0.1rem;
+            }
+        }
+    }
+}
+//相似书籍开始
+.simibook{
+    @include rect(100%,4.5rem);
+    padding: 0 0.24rem;
+    margin-top: 0.4rem;
+    .shuqianlogo{
+        @include rect(100%,0.75rem);
+        .leftimg{
+            @include rect(0.5rem,100%);
+            float: left;
+        }
+        .leftimg img{
+            width: 0.5rem;
+        }
+        .righttext{
+            @include rect(4rem,100%);
+            float: left;
+            padding-left: 0.15rem;
+            font-family: "微软雅黑";
+        }
+        .righttext h2{
+            @include rect(4rem,0.3rem);
+            font-size: 0.3rem;
+            font-weight: normal;
+        }
+        .righttext p{
+            @include rect(4rem,0.45rem);
+            font-size: 0.18rem;
+            line-height: 0.45rem;
+        }
+    } 
+    ul{
+        @include rect(100%,3.1rem);
+        margin-top: 0.2rem;
+        li{
+            @include rect(32%,100%);
+            float: left;
+            margin-right: 0.1rem;
+            box-shadow: 0 0 0.1rem #bab9b9;
+            border-radius: 0.1rem;
+            position: relative;
+//          overflow: hidden;
+            a{
+                display: block;
+                @include rect(32%,100%);
+                overflow: hidden;
+                .leftpoint{
+                    @include circle(0.1rem);
+                    background: #F1F1F1;
+                    position: absolute;
+                    left: -5px;
+                    bottom: 0.8rem;
+                }
+                .rightpoint{
+                    @include circle(0.1rem);
+                    background: #F1F1F1;
+                    position: absolute;
+                    right: -5px;
+                    bottom: 0.8rem;
+                }
+                .topimg{
+                    @include rect(1.78rem,2.38rem);
+                    @extend %lr;
+                    top: -0.1rem;
+                    background: url(../img/lhh_img_.png);
+                    background-size: cover;
+                    box-shadow: 0 0 0.05rem #bab9b9;
+                } 
+                .text{
+                    @include rect(1.6rem,0.6rem);
+                    @extend %lr;
+                    bottom: 0.16rem;
+                    font-family: "微软雅黑";
+                }
+                .text h2{
+                    height: 0.2rem;
+                    font-size: 0.2rem;
+                    text-align: center;
+                    color: #555;
+                    font-weight: normal;
+                }
+                .text p{
+                    height: 0.3rem;
+                    font-size: 0.14rem;
+                    line-height: 0.3rem;
+                    color: #b6b6b6;
+                    text-align: center;
+                }
+            }
+        }
+        .none{
+            margin-right: 0;
+        }
+    }
+}
+//轮播
+.btn{
+    @include rect(100%,0.6rem);
+    position: relative;
+    ul{
+        @include rect(1.2rem,100%);
+        @extend %lr;
+        li{
+            float: left;
+            margin-right: 0.3rem;
+            @include circle(0.1rem);
+            border: 1px solid #0090ff;
+            cursor: pointer;
+        }
+        li.active{
+            background: #0090ff;
+        }
+    }
+}

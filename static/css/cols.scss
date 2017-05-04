@@ -1,0 +1,38 @@
+//12栅格
+$device_width:320px 360px 375px 412px 414px 750px;
+html{
+  font-size: 100px;
+}
+@each $width in $device_width{
+  @media (min-width:$width){
+    html{
+      font-size:$width/750px * 100px;
+    }
+  }
+}
+body{
+  font-size:16px;
+}
+//清除浮动
+.row{
+  //overflow: hidden;
+  &::after{
+    content:"";
+    clear:both;
+  }
+}
+%float{
+  float: left;
+  position: relative;
+}
+$cols:12 !default;
+@for $i from 1 through $cols{
+  .col-#{$i}{
+    @extend %float;
+  }
+}
+@for $i from 1 through $cols{
+   .col-#{$i}{
+       width: percentage($i/$cols);
+   }
+}

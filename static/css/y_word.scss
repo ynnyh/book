@@ -1,0 +1,313 @@
+@import "./_base";
+@import "./_cols";
+//基础颜色
+$theme-color:#29a6dc;
+$back-color:#2a3441;
+$word-color:#357fe4;
+//阅读界面背景颜色
+//$y_bg-list:#ffe7a7 #fcf3db #ffe9b0 #d8a764 #3876ac #21858e #f4c5d4 #79d143;
+$y_bg-color:#ffe7a7;
+
+//阅读内容字体大小
+$y_size:1.5em;
+$y_word:0.14rem;
+
+html{
+  min-height:100%;
+  background:$y_bg-color;
+  position:relative;
+}
+
+//点击显示的头部
+.y_hidheader{
+  width:100%;
+  height:1rem;
+  @include bg($theme-color);
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:10;
+  .y_back{
+    display:block;
+    @include circle(0.44rem);
+    @include bg(#fff);
+    @extend %tb;
+    line-height:0.44rem;
+    text-align:center;
+    left:0.24rem;
+    color:$word-color;
+    span{
+      font-size:0.16rem;
+    }
+  }
+  .y_download{
+    display:block;
+    @include circle(0.44rem);
+    @include bg(#fff);
+    @extend %tb;
+    right:0.24rem;
+    border:1px solid #076cbe;
+    line-height:0.44rem;
+    text-align:center;
+    color:$word-color;
+    font-size:0.14rem;
+    span{
+      font-size:0.16rem;
+    }
+  }
+  .y_plus{
+    width:auto;
+    height:100%;
+    line-height:1rem;
+    color:#fff;
+    @extend %tb;
+    right:1rem;
+    span{
+      font-size:0.44rem;
+    }
+  }
+}
+
+//页面右侧书籍
+.y_book{
+  display:block;
+  width:1.01rem;
+  height:0.78rem;
+  position:fixed;
+  right:0;
+  top:0;
+  bottom:0;
+  margin:auto;
+  .y_cir{
+    @include circle(0.78rem);
+    @include bg(#fff);
+  }
+  .y_cube{
+    @include rect(0.62rem,0.78rem);
+    @include bg(#fff);
+    @extend %tb;
+    left:0.39rem;
+    line-height:0.78rem;
+    color:#357fe4;
+    span{
+      font-size:0.45rem;
+    }
+  }
+}
+
+//页面左侧月亮
+.y_moon{
+  display:block;
+  @include circle(0.57rem);
+  @include bg(#28dbbb);
+  position:fixed;
+  left:0.23rem;
+  bottom:3.2rem;
+  line-height:0.57rem;
+  text-align:center;
+  span{
+    font-size:0.34rem;
+    color:#ffe9b0;
+  }
+}
+
+//详情页
+.y_content{
+  width:100%;
+  height:100%;
+  padding:0 0.4rem 0 0.23rem;
+  //导航栏
+  .y_nav{
+    width:100%;
+    height:1rem;
+    .y_top{
+      width:100%;
+      height:0.26rem;
+      position:relative;
+      .y_xian{
+        width:100%;
+        height:2px;
+        background:#a1946e;
+        float:left;
+        margin-top:0.12rem;
+      }
+      i{
+        padding:0 0.07rem;
+        font-style:normal;
+        font-size:0.14rem;
+        float:left;
+        background:$y_bg-color;
+        @extend %tb;
+        left:0.23rem;
+      }
+    }
+    .y_bottom{
+      width:100%;
+      height:0.74rem;
+      line-height:0.74rem;
+      h5{
+        color:#454138;
+        font-size:0.28rem;
+        margin-right:0.15rem;
+        float:left;
+      }
+    }
+  }
+//  内容部分
+  .y_container{
+    width:100%;
+    max-height:11.47rem;
+    padding:0 0.3rem;
+
+    .y_nei{
+      width:100%;
+      height:auto;
+      font-size:$y_word;
+      line-height:$y_size;
+    }
+
+    pre {white-space: pre-wrap;      white-space: -moz-pre-wrap; white-space: -pre-wrap;     white-space: -o-pre-wrap;   word-wrap: break-word;      }
+  }
+//  底部进度部分
+  .y_foot{
+    width:100%;
+    height:0.56rem;
+    position:absolute;
+    bottom:0;
+    right:0;
+    .y_pro{
+      width:auto;
+      height:100%;
+      padding-left:0.5rem;
+      float:left;
+      i{
+        font-style:normal;
+        font-size:0.2rem;
+        color:#363028;
+      }
+      b{
+        font-weight:normal;
+        font-size:0.2rem;
+        color:#363028;
+      }
+    }
+    .y_page{
+      width:auto;
+      height:100%;
+      float:right;
+      padding-right:0.4rem;
+      b{
+        font-weight:normal;
+        font-size:0.2rem;
+        color:#363028;
+       }
+      i{
+        font-style:normal;
+        font-size:0.2rem;
+        color:#363028;
+        }
+      em{
+        font-style:normal;
+        font-size:0.2rem;
+        color:#363028;
+        }
+    }
+  }
+}
+
+//页面底部调整进度
+.y_change{
+  width:100%;
+  height:2.78rem;
+  @include bg(#151c2b);
+  position:fixed;
+  bottom:0;
+  left:0;
+  padding:0 0.38rem;
+  padding-top:0.08rem;
+  line-height:0.58rem;
+  .y_word{
+    width:100%;
+    height:0.58rem;
+
+    h4{
+      @include cube(0.58rem);
+      text-align:center;
+      line-height:0.58rem;
+      color:#f0f0f0;
+      font-size:0.24rem;
+      float:left;
+      margin-right:0.3rem;
+    }
+    img{
+      width:0.24rem;
+      height:0.24rem;
+      margin-right:0.2rem;
+      margin-top:0.17rem;
+      float:left;
+    }
+    .y_tiao{
+      width:4.68rem;
+      height:0.58rem;
+      float:left;
+      position:relative;
+      margin-right:0.2rem;
+      .y_jint{
+        display:block;
+        width:100%;
+        height:0.06rem;
+        @include bg(#6be829);
+        @extend %tb;
+      }
+    }
+    .y_hao{
+      width:auto;
+      height:100%;
+      line-height:0.58rem;
+      color:#f2f2f2;
+      float:left;
+      font-size:0.16rem;
+    }
+
+  //  背景中的颜色  八个颜色放不下
+  //  $y_colos-list: #fcf3db #ffe9b0 #d8a764 #3876ac #21858e #f4c5d4 #79d143 #fff;
+    $y_colos-list: #fcf3db #ffe9b0 #d8a764 #fff;
+    .y_color{
+      width:auto;
+      height:0.9rem;
+      .y_yan{
+        min-width:0.85rem;
+        height:100%;
+        float:left;
+        margin-right:0.1rem;
+        .y_ky{
+          @include cube(0.55rem);
+          margin:0 auto;
+          font-size:0.18rem;
+          color:#313131;
+          text-align:center;
+          line-height:0.55rem;
+        }
+        b{
+          display:block;
+          width:100%;
+          height:0.35rem;
+          line-height:0.35rem;
+          color:#ccc;
+          font-size:0.14rem;
+          font-weight:normal;
+          text-align:center;
+        }
+      }
+      @each $key in $y_colos-list{
+        $i:index($y_colos_list,$key);
+        .y_yan:nth-child(#{$i}){
+          .y_ky{
+            @include bg($key);
+          }
+        }
+      }
+    }
+  }
+
+}

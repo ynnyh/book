@@ -1,0 +1,311 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header .back {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.header .headercon, .header .headercon .allrow, .header .headercon .allrow .smallbox, .foot .review {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+html {
+  font-size: 100px;
+}
+
+@media (min-width: 320px) {
+  html {
+    font-size: 42.66667px;
+  }
+}
+
+@media (min-width: 360px) {
+  html {
+    font-size: 48px;
+  }
+}
+
+@media (min-width: 375px) {
+  html {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 412px) {
+  html {
+    font-size: 54.93333px;
+  }
+}
+
+@media (min-width: 414px) {
+  html {
+    font-size: 55.2px;
+  }
+}
+
+@media (min-width: 750px) {
+  html {
+    font-size: 100px;
+  }
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 136.53333px;
+  }
+}
+
+body {
+  font-size: 16px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+  float: left;
+  position: relative;
+}
+
+.col-1 {
+  width: 8.33333%;
+}
+
+.col-2 {
+  width: 16.66667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33333%;
+}
+
+.col-5 {
+  width: 41.66667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33333%;
+}
+
+.col-8 {
+  width: 66.66667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33333%;
+}
+
+.col-11 {
+  width: 91.66667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+  height: 1rem;
+  padding: 0 0.24rem;
+  background-color: #29a6dc;
+  position: relative;
+}
+
+.header .back {
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  left: 0.24rem;
+  background: url(../img/back.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+.header .headercon {
+  width: 2rem;
+  height: 1rem;
+  padding: 0.1rem 0;
+}
+
+.header .headercon h2 {
+  width: 100%;
+  height: 0.46rem;
+  font-size: 0.4rem;
+  color: #fff;
+  text-align: center;
+  padding: 0.03rem 0;
+}
+
+.header .headercon .allrow {
+  width: 100%;
+  height: 0.1rem;
+  position: relative;
+  padding: 3px 0;
+}
+
+.header .headercon .allrow .smallbox {
+  width: 0.34rem;
+  height: 3px;
+  background: url(../img/lhh_row.png) center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header .headercon p {
+  width: 100%;
+  height: 0.25rem;
+  text-align: center;
+  font-size: 0.18rem;
+  color: #fff;
+  line-height: 0.25rem;
+}
+
+.commentlist {
+  width: 100%;
+  height: auto;
+  padding: 0 0.24rem;
+}
+
+.commentlist ul {
+  width: 100%;
+  height: 100%;
+  margin-top: 0.2rem;
+}
+
+.commentlist ul li {
+  width: 100%;
+  height: 1.6rem;
+  box-shadow: 0 0 0.1rem #d5e1fa;
+  margin-bottom: 0.2rem;
+  border-radius: 0.1rem;
+  padding-left: 0.2rem;
+  padding-top: 0.2rem;
+}
+
+.commentlist ul li .leftimg {
+  width: 0.85rem;
+  height: 1.27rem;
+  float: left;
+  position: relative;
+  margin-right: 0.3rem;
+}
+
+.commentlist ul li .leftimg img {
+  width: 0.85rem;
+  height: 0.85rem;
+}
+
+.commentlist ul li .right {
+  width: 5.1rem;
+  height: 1.3rem;
+  float: left;
+}
+
+.commentlist ul li .right .texts {
+  width: 5.1rem;
+  height: 0.82rem;
+  font-size: 0.2rem;
+  color: #c0c0c0;
+  overflow: hidden;
+  line-height: 1.5em;
+  border-bottom: 1px dashed #a0a0a0;
+}
+
+.commentlist ul li .right .bottom {
+  width: 5.3rem;
+  height: 0.5rem;
+  padding-top: 0.05rem;
+  position: relative;
+}
+
+.commentlist ul li .right .bottom .date {
+  width: 1.7rem;
+  height: 100%;
+  float: left;
+}
+
+.commentlist ul li .right .date .dateimg {
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  box-shadow: 0 0 0.05rem #d5e1fa;
+  float: left;
+  background: url(../img/clock.jpg) center center;
+  background-size: 60% 60%;
+  background-repeat: no-repeat;
+}
+
+.commentlist ul li .right .date .datetext {
+  width: 0.75rem;
+  height: 100%;
+  margin-left: 5px;
+  font-size: 0.14rem;
+  line-height: 0.45rem;
+  color: #D5D5D5;
+  float: left;
+}
+
+.commentlist ul li .right .bottom .collect {
+  width: 1.4rem;
+  height: 100%;
+  float: right;
+}
+
+.commentlist ul li .right .bottom .collect .dateimg {
+  background: url(../img/collect.png) center center;
+  background-size: 60% 60%;
+  background-repeat: no-repeat;
+}
+
+.foot {
+  width: 100%;
+  height: 1.25rem;
+  background-color: #151c2b;
+  position: relative;
+}
+
+.foot .review {
+  display: block;
+  width: 1.45rem;
+  height: 0.52rem;
+  border-radius: 0.26rem;
+  box-shadow: 0 0 0.07rem #999b9f;
+  background: url(../img/lhh_review.png) center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*# sourceMappingURL=../index.css.map */

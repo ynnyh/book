@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width'>
+    <title></title>
+    <link rel="stylesheet" href="<?php echo CSS_PATH ?>col.css">
+    <link rel="stylesheet" href="<?php echo CSS_PATH ?>load.css">
+    <script src="<?php echo JS_PATH ?>jquery.min.js"></script>
+    <script src="<?php echo JS_PATH ?>login.js"></script>
+</head>
+<style>
+    .has-success{
+        border-color: green;
+    }
+    .has-error{
+        border-color:red;
+    }
+</style>
+<body>
+<div class="fullScreen">
+    <!--头部开始-->
+    <div class="header container">
+        <div class="title">
+            <h4>登录</h4>
+            <div class="return"><a href="/book/index.php/index/lhh_load"></a></div>
+        </div>
+        <div class="logo">LOGO</div>
+    </div>
+    <!--头部结束-->
+    <!--名人名言开始-->
+    <div class="wisdom container">
+        <div class="content">
+            <h6>或作或辍，一曝十寒，则虽读书百年，吾未见其可也。</h6>
+            <p>—— 吴梦祥</p>
+        </div>
+
+    </div>
+    <!--名人名言结束-->
+    <!--输入开始-->
+    <div class="load container">
+        <form action="">
+            <ul class="list">
+                <li>
+                    <div class="icon personal"></div>
+                    <input type="text" name="admin" placeholder="请输入您的学号/工号">
+                </li>
+                <li>
+                    <div class="icon password"></div>
+                    <input type="password" name="password" placeholder="请输入您的密码">
+                </li>
+            </ul>
+            <ol class="sign">
+                <li class="key"><a href="/book/index.php/index/lhh_retrievePass">找回密码</a></li>
+                <li class="signIn"><a href="/book/index.php/index/lhh_sign">我要注册</a></li>
+            </ol>
+        </form>
+    </div>
+    <!--输入结束-->
+    <!--提交开始-->
+    <div class="button send">
+        <p>
+            <a href="javascript:;">立即登录</a>
+            <i class="left"></i>
+            <i class="right"></i>
+        </p>
+    </div>
+    <!--提交结束-->
+</div>
+</body>
+</html>

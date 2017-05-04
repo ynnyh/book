@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="stylesheet" href="<?php echo CSS_PATH ?>bootstrap.css">
+</head>
+<style>
+    .red{
+        border:2px solid red;
+    }
+    .green{
+        border:2px solid green;
+    }
+</style>
+<body>
+<div class="counter">
+    <div class="col-md-6" style="margin:50px auto;float:none">
+        <div class="panel panel-info">
+            <div class="panel-heading" style="text-align:center">登录</div>
+            <div class="panel-body">
+                <form class="form-horizontal" role="form" method="post" action="/music/index.php/admin/check_login">
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                        <div class="col-sm-10">
+                            <input name="account" type="text" class="form-control" id="inputEmail3" placeholder="Email" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                        <div class="col-sm-10">
+                            <input name="password" type="password" class="form-control" id="inputPassword3" placeholder="Password" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="remember"> Remember me
+                                </label>
+                                <label>
+                                    <input type="text" name="check">
+                                </label>
+                                <span class="chbox" style="display:inline-block;border:1px solid #000"><?php echo $check; ?></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-default send">Sign in</button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="<?php echo JS_PATH ?>jquery.min.js"></script>
+<!--<script src="<?php echo JS_PATH ?>login.js"></script>-->
+</html>

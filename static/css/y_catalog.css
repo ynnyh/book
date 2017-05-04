@@ -1,0 +1,282 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Microsoft YaHei";
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.y_header .y_back, .y_header .y_choice .y_dianone, .y_header .y_choice .y_words {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.y_header .y_choice, .y_header .y_choice .y_words .y_show, .y_header .y_choice .y_words .y_hid {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+html {
+  font-size: 100px;
+}
+
+@media (min-width: 320px) {
+  html {
+    font-size: 42.66667px;
+  }
+}
+
+@media (min-width: 360px) {
+  html {
+    font-size: 48px;
+  }
+}
+
+@media (min-width: 375px) {
+  html {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 414px) {
+  html {
+    font-size: 55.2px;
+  }
+}
+
+@media (min-width: 750px) {
+  html {
+    font-size: 100px;
+  }
+}
+
+body {
+  font-size: 16px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+  float: left;
+  position: relative;
+}
+
+.col-1 {
+  width: 8.33333%;
+}
+
+.col-2 {
+  width: 16.66667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33333%;
+}
+
+.col-5 {
+  width: 41.66667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33333%;
+}
+
+.col-8 {
+  width: 66.66667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33333%;
+}
+
+.col-11 {
+  width: 91.66667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.y_header {
+  width: 100%;
+  height: 1rem;
+  background-color: #29a6dc;
+  position: relative;
+}
+
+.y_header .y_back {
+  display: block;
+  width: 0.44rem;
+  height: 0.44rem;
+  border-radius: 50%;
+  background-color: #fff;
+  line-height: 0.44rem;
+  text-align: center;
+  left: 0.24rem;
+  color: #357fe4;
+}
+
+.y_header .y_choice {
+  width: 5.72rem;
+  height: 0.84rem;
+  border-radius: 0.84rem;
+  background-color: #2a3441;
+}
+
+.y_header .y_choice .y_dianone {
+  width: 0.03rem;
+  height: 0.59rem;
+  left: 1.93rem;
+}
+
+.y_header .y_choice .y_dianone img {
+  width: 100%;
+  height: 100%;
+}
+
+.y_header .y_choice .y_dianone.y_diantwo {
+  left: 3.86rem;
+}
+
+.y_header .y_choice .y_words {
+  width: 1.9rem;
+  height: 0.84rem;
+  left: 0;
+}
+
+.y_header .y_choice .y_words .y_show {
+  width: 0.59rem;
+  height: 0.34rem;
+}
+
+.y_header .y_choice .y_words .y_hid {
+  display: none;
+  width: 1.7rem;
+  height: 0.76rem;
+}
+
+.y_header .y_choice .y_words.y_showing .y_show {
+  display: none;
+}
+
+.y_header .y_choice .y_words.y_showing .y_hid {
+  display: block;
+}
+
+.y_header .y_choice .y_words.y_wordstwo {
+  left: 1.96rem;
+}
+
+.y_header .y_choice .y_words.y_wordstwo .y_show {
+  width: 0.73rem;
+  height: 0.35rem;
+}
+
+.y_header .y_choice .y_words.y_wordstwo .y_hid {
+  width: 1.68rem;
+  height: 0.72rem;
+}
+
+.y_header .y_choice .y_words.y_wordsthree {
+  left: 3.89rem;
+}
+
+.y_header .y_choice .y_words.y_wordsthree .y_show {
+  width: 0.48rem;
+  height: 0.35rem;
+}
+
+.y_header .y_choice .y_words.y_wordsthree .y_hid {
+  width: 1.68rem;
+  height: 0.71rem;
+}
+
+.y_content {
+  width: 100%;
+  height: 11.95rem;
+  background: #fff;
+}
+
+.y_content .y_list-ul {
+  width: 100%;
+  height: auto;
+}
+
+.y_content .y_list-ul .y_list-li {
+  width: 100%;
+  height: 0.88rem;
+}
+
+.y_content .y_list-ul .y_list-li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-bottom: 1px dashed #999;
+  padding: 0 0.47rem;
+  box-sizing: border-box;
+  color: #333;
+}
+
+.y_content .y_list-ul .y_list-li a .y_zheng {
+  width: 0.84rem;
+  height: 100%;
+  line-height: 0.88rem;
+  float: left;
+}
+
+.y_content .y_list-ul .y_list-li a .y_zhang {
+  width: auto;
+  height: 100%;
+  line-height: 0.88rem;
+  float: left;
+  margin-right: 0.3rem;
+}
+
+.y_content .y_list-ul .y_list-li a .y_name {
+  width: auto;
+  height: 100%;
+  line-height: 0.88rem;
+  float: left;
+}
+
+.y_content .y_list-ul .y_list-li a .y_have {
+  width: auto;
+  height: 100%;
+  line-height: 0.88rem;
+  color: #989898;
+  float: right;
+}
+
+.y_content .y_list-ul .y_list-li .catalog {
+  color: #357fe4;
+}
